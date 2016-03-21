@@ -1,5 +1,5 @@
 <?xml-stylesheet href="../../xsltforms/xsl/xsltforms.xsl" type="text/xsl"?>
-<!--<?xsltforms-options domengine="name=Fleur;url=xsltforms/js/fleur.js;uri=http://www.agencexml.com/Fleur;version=1.0"?>-->
+<!--<?xsltforms-options domengine="name=Fleur;url=../../xsltforms/js/fleur.js;uri=http://www.agencexml.com/Fleur;version=1.0"?>-->
 <?xsltforms-options debug="no"?>
 <?css-conversion no?>
 <?xml-model href="http://www.oxygenxml.com/1999/xhtml/xhtml-xforms.nvdl" 
