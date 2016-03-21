@@ -109,11 +109,11 @@
                                 <xf:label></xf:label>
                             </xf:input>
                             <xf:output           
-                                value="concat(substring(/MyModel/MyDate,6,2),
+                                value="concat(substring(@date, 6, 2),
                                 '/',
-                                substring(/MyModel/MyDate,9,2),
+                                substring(@date, 9, 2),
                                 '/',
-                                substring(/MyModel/MyDate,1,4))"
+                                substring(@date, 1, 4))"
                             />
                             <span>: </span>
                             <xf:output value="."></xf:output>
