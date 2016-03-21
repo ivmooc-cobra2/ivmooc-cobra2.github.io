@@ -1,0 +1,181 @@
+<?xml-stylesheet href="../../xsltforms/xsl/xsltforms.xsl" type="text/xsl"?>
+<!--<?xsltforms-options domengine="name=Fleur;url=xsltforms/js/fleur.js;uri=http://www.agencexml.com/Fleur;version=1.0"?>-->
+<?xsltforms-options debug="no"?>
+<?css-conversion no?>
+<?xml-model href="http://www.oxygenxml.com/1999/xhtml/xhtml-xforms.nvdl" 
+    schematypens="http://purl.oclc.org/dsdl/nvdl/ns/structure/1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cwb="http://bibfram.es/cwb/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:oa="http://www.w3.org/ns/oa#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xf="http://www.w3.org/2002/xforms"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <head>
+        <title>IVMOOC16 CoBRA Group 2 Project Website</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+        <!-- Optional theme -->
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" />
+        <style type="text/css">
+            <![CDATA[
+            #wrapper{
+                width: 80%;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: #C0C0C0;
+            }
+            .xforms-label{
+                width: 15%;
+                float: left;
+            }
+            .checkbox{
+                list-style-type: none;
+            }
+            ]]>
+        </style>
+        <xf:model id="default-model">
+            <xf:instance>
+                <data xmlns="">
+                    <client>
+                        <project canvas="https://iu.instructure.com/courses/1504930/pages/client-projects#cob">Comic Book Readership Archive (CoBRA)</project>
+                        <name>Dr. John Walsh</name>
+                    </client>
+                    <group>
+                        <people>
+                            <person>
+                                <name canvas="https://iu.instructure.com/groups/254198/users/6000054">Michael Barron</name>
+                                <roles>
+                                    <role>Data cleanup and preprocessing</role>
+                                    <role>Data analysis</role>
+                                    <role>Data visualization</role>
+                                </roles>
+                                <skills>
+                                    <skill>Statistical analysis</skill>
+                                </skills>
+                            </person>
+                            <person>
+                                <name canvas="https://iu.instructure.com/groups/254198/users/5993917">Brett Steele</name>
+                                <roles>
+                                    <role>Project communications (Slack)</role>
+                                    <role>Data analysis</role>
+                                    <role>Data visualization</role>
+                                </roles>
+                                <skills>
+                                    <skill>R</skill>
+                                </skills>
+                            </person>
+                            <person>
+                                <name canvas="https://iu.instructure.com/groups/254198/users/5592060">Tim Thompson</name>
+                                <roles>
+                                    <role>Data/code repository setup and maintenance (GitHub)</role>
+                                    <role>Data visualization</role>
+                                    <role>Leader (responsible for assignment submissions)</role>
+                                </roles>
+                                <skills>
+                                    <skill>Metadata/structured data
+                                        formats</skill>
+                                </skills>
+                            </person>
+                            <person>
+                                <name canvas="https://iu.instructure.com/groups/254198/users/3628875">Yifan Xu</name>
+                                <roles>
+                                    <role>Data analysis</role>
+                                    <role>Data visualization</role>
+                                </roles>
+                                <skills>
+                                    <skill>SQL</skill>
+                                </skills>
+                            </person>
+                            <person>
+                                <name canvas="https://iu.instructure.com/groups/254198/users/5907087">Ray Zupancic</name>
+                                <roles>
+                                    <role>Data cleanup and preprocessing</role>
+                                    <role>Data analysis</role>
+                                </roles>
+                                <skills>
+                                    <skill>Python</skill>
+                                </skills>
+                            </person>
+                        </people>
+                    </group>
+                    <tasks>
+                        <task date="2016-03-12" completed="true">Created Slack channel</task>
+                        <task date="2016-03-13" completed="true">Created GitHub repository and GitHub pages website</task>                        
+                        <task date="2016-03-21" completed="false">Submitted Assignment 1</task>
+                    </tasks>
+                </data>
+            </xf:instance>
+            <xf:bind nodeset="/data/tasks/task/@date" type="xf:date"></xf:bind>
+            <xf:bind nodeset="/data/tasks/task/@completed" type="xs:boolean"></xf:bind>
+        </xf:model>
+    </head>
+    <body>
+        <div id="wrapper" class="container">
+            <h1>IVMOOC16 Client Project Selection: CoBRA Group 2</h1>
+            <xf:group ref="/data/client">
+                <h3>Project: <a href="{project/@canvas}"><xf:output id="client-project" value="project"
+                    ></xf:output></a></h3>
+                <h3>Client: <xf:output id="client-name" value="name"
+                    ></xf:output></h3>
+            </xf:group>
+            <hr />
+            <xf:group id="group-people" ref="/data/group/people">
+                <h3>Group members: </h3>
+                <xf:repeat nodeset="person">
+                    <ul>
+                        <li>
+                            <a href="{name/@canvas}"><xf:output value="name"></xf:output></a>                                
+                            <ul>
+                                <li>Roles:
+                                    <ul>
+                                        <xf:repeat nodeset="roles/role">
+                                            <li><xf:output value="."></xf:output></li>
+                                        </xf:repeat>        
+                                    </ul>                                    
+                                </li>                                
+                            </ul>
+                            <ul>
+                                <li>Skills:
+                                    <ul>
+                                        <xf:repeat nodeset="skills/skill">
+                                            <li><xf:output value="."></xf:output></li>
+                                        </xf:repeat>        
+                                    </ul>                                    
+                                </li>                                
+                            </ul>                            
+                        </li>
+                    </ul>
+                </xf:repeat>
+            </xf:group>
+            <xf:group id="group-tasks">
+                <h3>Group tasks: </h3>
+                <ul>
+                    <xf:repeat nodeset="/data/tasks/task">                        
+                        <li class="checkbox">
+                            <xf:input ref="@completed">
+                                <xf:label></xf:label>
+                            </xf:input>
+                            <xf:output value="@date"></xf:output>
+                            <span>: </span>
+                            <xf:output value="."></xf:output>
+                        </li>
+                    </xf:repeat>    
+                </ul>
+                
+            </xf:group>
+        </div>
+        <!-- Latest compiled and minified JavaScript -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </body>
+</html>
