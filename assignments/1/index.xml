@@ -21,20 +21,20 @@
         <title>IVMOOC16 CoBRA Group 2 Project Website</title>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
         <!-- Optional theme -->
         <link rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" />
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"/>
         <style type="text/css">
             <![CDATA[
             #wrapper{
                 width: 80%;
                 height: auto;
-                min-height: 1000px;                
+                min-height: 1000px;
                 margin-top: 1%;
                 margin-right: auto;
                 margin-left: auto;
-                margin-bottom: 2%;                  
+                margin-bottom: 2%;
                 background-color: #C0C0C0;
             }
             .xforms-label{
@@ -51,81 +51,90 @@
             #group-tasks{
                 width: 50%;
                 float: left;
-            }
-            ]]>
+            }]]>
         </style>
         <xf:model id="default-model">
-            <xf:instance src="data/data.xml"></xf:instance>
-            <xf:bind nodeset="/data/tasks/task/@date" type="xf:date"></xf:bind>
-            <xf:bind nodeset="/data/tasks/task/@completed" type="xs:boolean"></xf:bind>
+            <xf:instance src="assignments/1/data/data.xml"/>
+            <xf:bind nodeset="/data/tasks/task/@date" type="xf:date"/>
+            <xf:bind nodeset="/data/tasks/task/@completed" type="xs:boolean"/>
         </xf:model>
     </head>
     <body>
         <div id="wrapper" class="container">
             <h1>IVMOOC16 Client Project Selection: CoBRA Group 2</h1>
-            <xf:group ref="/data/client">
-                <h3>Project: <a href="{project/@canvas}"><xf:output id="client-project" value="project"
-                    ></xf:output></a></h3>
-                <h3>Client: <xf:output id="client-name" value="name"
-                    ></xf:output></h3>
-            </xf:group>
             <xf:group ref="/data">
-                <hr />    
-            </xf:group>            
-            <xf:group id="group-people" ref="/data/group/people">
-                <h3>Group members: </h3>
-                <xf:repeat nodeset="person">
+                <xf:group ref="client">
+                    <h3>Project: 
+                        <a href="{project/@canvas}">
+                            <xf:output id="client-project" value="project"/>
+                        </a>
+                    </h3>
+                    <h3>Client:
+                        <xf:output id="client-name" value="name"/>
+                    </h3>
+                </xf:group>               
+                <hr/>            
+                <xf:group id="group-people" ref="group/people">
+                    <h3>Group members: </h3>
+                    <xf:repeat nodeset="person">
+                        <ul>
+                            <li>
+                                <a href="{name/@canvas}">
+                                    <xf:output value="name"/>
+                                </a>
+                                <ul>
+                                    <li>Roles: 
+                                        <ul>
+                                            <xf:repeat nodeset="roles/role">
+                                                <li>
+                                                    <xf:output value="."/>
+                                                </li>
+                                            </xf:repeat>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>Skills: 
+                                        <ul>
+                                            <xf:repeat nodeset="skills/skill">
+                                                <li>
+                                                    <xf:output value="."/>
+                                                </li>
+                                            </xf:repeat>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </xf:repeat>
+                </xf:group>
+                <xf:group id="group-tasks" ref="tasks">
+                    <h3>Group tasks: </h3>
                     <ul>
-                        <li>
-                            <a href="{name/@canvas}"><xf:output value="name"></xf:output></a>                                
-                            <ul>
-                                <li>Roles:
-                                    <ul>
-                                        <xf:repeat nodeset="roles/role">
-                                            <li><xf:output value="."></xf:output></li>
-                                        </xf:repeat>        
-                                    </ul>                                    
-                                </li>                                
-                            </ul>
-                            <ul>
-                                <li>Skills:
-                                    <ul>
-                                        <xf:repeat nodeset="skills/skill">
-                                            <li><xf:output value="."></xf:output></li>
-                                        </xf:repeat>        
-                                    </ul>                                    
-                                </li>                                
-                            </ul>                            
-                        </li>
+                        <xf:repeat nodeset="task">
+                            <li class="checkbox">
+                                <xf:input ref="@completed">
+                                    <xf:label/>
+                                </xf:input>
+                                <xf:output
+                                    value="concat(substring(@date, 6, 2),
+                                    '/',
+                                    substring(@date, 9, 2),
+                                    '/',
+                                    substring(@date, 1, 4))"/>
+                                <span>: </span>
+                                <xf:group ref="@link">
+                                    <a href="{@link}">
+                                        <xf:output value=".."/>
+                                    </a>
+                                </xf:group>
+                                <xf:group ref=".[not(@link)]">
+                                    <xf:output value="."/>
+                                </xf:group>
+                            </li>
+                        </xf:repeat>
                     </ul>
-                </xf:repeat>
-            </xf:group>
-            <xf:group id="group-tasks" ref="/data/tasks">
-                <h3>Group tasks: </h3>
-                <ul>
-                    <xf:repeat nodeset="task">                        
-                        <li class="checkbox">
-                            <xf:input ref="@completed">
-                                <xf:label></xf:label>
-                            </xf:input>
-                            <xf:output           
-                                value="concat(substring(@date, 6, 2),
-                                '/',
-                                substring(@date, 9, 2),
-                                '/',
-                                substring(@date, 1, 4))"
-                            />
-                            <span>: </span>
-                            <xf:group ref="@link">
-                                <a href="{@link}"><xf:output value=".."></xf:output></a>    
-                            </xf:group>
-                            <xf:group ref=".[not(@link)]">
-                                <xf:output value="."></xf:output>    
-                            </xf:group>
-                        </li>
-                    </xf:repeat>    
-                </ul>
-                
+                </xf:group>
             </xf:group>
         </div>
         <!-- Latest compiled and minified JavaScript -->
