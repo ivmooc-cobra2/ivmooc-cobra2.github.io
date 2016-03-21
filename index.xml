@@ -44,6 +44,14 @@
             .checkbox{
                 list-style-type: none;
             }
+            #group-people{
+                width: 50%;
+                float: left;
+            }
+            #group-tasks{
+                width: 50%;
+                float: left;
+            }
             ]]>
         </style>
         <xf:model id="default-model">
