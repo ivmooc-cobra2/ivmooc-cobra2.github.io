@@ -116,7 +116,12 @@
                                 substring(@date, 1, 4))"
                             />
                             <span>: </span>
-                            <xf:output value="."></xf:output>
+                            <xf:group ref="@link">
+                                <a href="{@link}"><xf:output value=".."></xf:output></a>    
+                            </xf:group>
+                            <xf:group ref=".[not(@link)]">
+                                <xf:output value="."></xf:output>    
+                            </xf:group>
                         </li>
                     </xf:repeat>    
                 </ul>

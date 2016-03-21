@@ -121,8 +121,7 @@
                             </xf:group>
                             <xf:group ref=".[not(@link)]">
                                 <xf:output value="."></xf:output>    
-                            </xf:group>
-                            
+                            </xf:group>                            
                         </li>
                     </xf:repeat>    
                 </ul>                
