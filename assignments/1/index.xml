@@ -54,7 +54,7 @@
             }]]>
         </style>
         <xf:model id="default-model">
-            <xf:instance src="assignments/1/data/data.xml"/>
+            <xf:instance src="data/data.xml"/>
             <xf:bind nodeset="/data/tasks/task/@date" type="xf:date"/>
             <xf:bind nodeset="/data/tasks/task/@completed" type="xs:boolean"/>
         </xf:model>
