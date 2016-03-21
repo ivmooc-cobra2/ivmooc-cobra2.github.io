@@ -30,6 +30,7 @@
             #wrapper{
                 width: 80%;
                 height: auto;
+                min-height: 1000px;                
                 margin-top: 1%;
                 margin-right: auto;
                 margin-left: auto;
@@ -130,7 +131,9 @@
                 <h3>Client: <xf:output id="client-name" value="name"
                     ></xf:output></h3>
             </xf:group>
-            <hr />
+            <xf:group ref="/data">
+                <hr />    
+            </xf:group>            
             <xf:group id="group-people" ref="/data/group/people">
                 <h3>Group members: </h3>
                 <xf:repeat nodeset="person">
@@ -159,10 +162,10 @@
                     </ul>
                 </xf:repeat>
             </xf:group>
-            <xf:group id="group-tasks">
+            <xf:group id="group-tasks" ref="/data/tasks">
                 <h3>Group tasks: </h3>
                 <ul>
-                    <xf:repeat nodeset="/data/tasks/task">                        
+                    <xf:repeat nodeset="task">                        
                         <li class="checkbox">
                             <xf:input ref="@completed">
                                 <xf:label></xf:label>
