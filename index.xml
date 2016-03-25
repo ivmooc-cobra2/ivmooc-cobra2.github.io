@@ -21,10 +21,10 @@
         <title>IVMOOC16 CoBRA Group 2 Project Website</title>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
         <!-- Optional theme -->
         <link rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"/>
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" />
         <style type="text/css">
             <![CDATA[
             #wrapper{
@@ -69,11 +69,9 @@
                             <xf:output id="client-project" value="project"/>
                         </a>
                     </h3>
-                    <h3>Client:
-                        <xf:output id="client-name" value="name"/>
-                    </h3>
-                </xf:group>               
-                <hr/>            
+                    <h3>Client: <xf:output id="client-name" value="name"/></h3>
+                </xf:group>
+                <hr />
                 <xf:group id="group-people" ref="group/people">
                     <h3>Group members: </h3>
                     <xf:repeat nodeset="person">

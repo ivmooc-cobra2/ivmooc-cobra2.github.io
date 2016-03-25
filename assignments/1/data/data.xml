@@ -30,6 +30,7 @@
             </person>
             <person>
                 <name canvas="https://iu.instructure.com/groups/254198/users/5592060">Tim Thompson</name>
+                <email>timathom@indiana.edu</email>
                 <roles>
                     <role>Data/code repository setup and maintenance (GitHub)</role>
                     <role>Data visualization</role>
