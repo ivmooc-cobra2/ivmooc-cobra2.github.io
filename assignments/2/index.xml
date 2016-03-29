@@ -80,7 +80,7 @@
                                 
             }
             #network{
-                margin: 0 2% 2% 4%;
+                margin: 0 2% 2% 0;
                 width: 600px;
                 float: left;
                                 
