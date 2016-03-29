@@ -136,81 +136,17 @@
                     <h3>Related work</h3>
                     <p>The textbook Visual Insights<sup>1</sup> contains exemplary visualizations and thematic presentations that are relevant to the CoBRA dataset, including the case studies "One Hundred Years of ISIS" (p. 262) and Visualizing NYC Hive (p. 268). The rough outline of our proposed CoBRA visualization is based on observing these thematic approaches to visualization and data encapsulation.</p>
                     <p>A search on some of the reference suggestions in the CoBRA project description reveals a few scholarly articles and materials relevant to the history of comic book readership and relevant to the formation of the CoBRA project. These references are useful for understanding the context around the project, but not in terms of auxiliary raw data or exemplary visualizations.</p>
-                    <p>A search on comic-book readership online produces some more specific and contextually relevant data and visualization examples, including breakdowns of demographic-based and gender-based fan discussion and readership statistics. The Internet and Internet discussion and fan sites appear to be the modern replacement of older fan publications, and is naturally more expedient and simpler to harvest data from contemporary online sites and archives than from print sources. As an example, the Graphic Policy website details such statistics, as harvested from Facebook.<sup>2</sup>  depicts pie-charts and line graphs depicting comic book demographics).</p>
+                    <p>A search on comic-book readership online produces some more specific and contextually relevant data and visualization examples, including breakdowns of demographic-based and gender-based fan discussion and readership statistics. The Internet and Internet discussion and fan sites appear to be the modern replacement of older fan publications, and it is naturally more expedient and simpler to harvest data from contemporary online sites and archives than from print sources. As an example, the Graphic Policy website details such statistics, as harvested from Facebook,<sup>2</sup> with pie-charts and line graphs depicting comic book demographics).</p>
                     <p>Although interesting, it is not clear that online sites with present-day statistics provide any significant guidance to the task of characterizing, analyzing, and visualizing the historical data segment presented in the CoBRA project. An expanded scope that includes comparison to present-day statistics might be useful.</p>
-                    <p>A previous version of the CoBRA dataset has been visualized by Anirudh R. A., Ashish Shendure, Brittany Yoder, Jae Eun Kum, and Shambhavi Dhargalkar.<sup>3</sup> Our work will differ from theirs by focusing more on geospatial and network visualization techniques. Another exemplary visualization cited by Anirudh R. A. et al., which includes digital images and transcripts of comic book fan letters, can be found on the hosted TimeMapper website.<sup>4</sup></p>                              
+                    <p>A previous version of the CoBRA dataset has been visualized by Anirudh R. A., Ashish Shendure, Brittany Yoder, Jae Eun Kum, and Shambhavi Dhargalkar.<sup>3</sup> Our work will differ from theirs by focusing more on geospatial and network visualization techniques. Another exemplary visualization cited by Anirudh R. A. et al., which includes digital images and transcripts of comic book fan letters, can be found on the hosted TimeMapper website.<sup>4</sup></p>             
                 </xf:group>
                 <xf:group id="citations">
-                    <h3>Citations</h3>
-                   
+                    <h3>Citations</h3>                   
                         <p><sup>1 </sup>Börner, K., and D. E. Polley. 2014. <i>Visual Insights</i>. Cambridge, MA: MIT Press.</p>
                         <p><sup>2 </sup><a href="http://graphicpolicy.com/2015/09/01/demo-graphics-comic-fandom-on-facebook-14/">http://graphicpolicy.com/2015/09/01/demo-graphics-comic-fandom-on-facebook-14/</a></p>
                         <p><sup>3 </sup><a href="http://ashishshendure.com/projects/ivmooc_cobra_2015/">http://ashishshendure.com/projects/ivmooc_cobra_2015/</a></p>
-                        <p><sup>4 </sup><a href="http://timemapper.okfnlabs.org/anon/ik4x3a-timemapper-comics-readership-example">http://timemapper.okfnlabs.org/anon/ik4x3a-timemapper-comics-readership-example</a></p>
-                    
-                </xf:group>
-                
-               <!-- <xf:group id="group-people" ref="group/people">
-                    <h3>Group members: </h3>
-                    <xf:repeat nodeset="person">
-                        <ul>
-                            <li>
-                                <a href="{name/@canvas}">
-                                    <xf:output value="name"/>
-                                </a>
-                                <ul>
-                                    <li>Roles: 
-                                        <ul>
-                                            <xf:repeat nodeset="roles/role">
-                                                <li>
-                                                    <xf:output value="."/>
-                                                </li>
-                                            </xf:repeat>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>Skills: 
-                                        <ul>
-                                            <xf:repeat nodeset="skills/skill">
-                                                <li>
-                                                    <xf:output value="."/>
-                                                </li>
-                                            </xf:repeat>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </xf:repeat>
-                </xf:group>-->
-                <!--<xf:group id="group-tasks" ref="tasks">
-                    <h3>Group tasks: </h3>
-                    <ul>
-                        <xf:repeat nodeset="task">
-                            <li class="checkbox">
-                                <xf:input ref="@completed">
-                                    <xf:label/>
-                                </xf:input>
-                                <xf:output
-                                    value="concat(substring(@date, 6, 2),
-                                    '/',
-                                    substring(@date, 9, 2),
-                                    '/',
-                                    substring(@date, 1, 4))"/>
-                                <span>: </span>
-                                <xf:group ref="@link">
-                                    <a href="{@link}">
-                                        <xf:output value=".."/>
-                                    </a>
-                                </xf:group>
-                                <xf:group ref=".[not(@link)]">
-                                    <xf:output value="."/>
-                                </xf:group>
-                            </li>
-                        </xf:repeat>
-                    </ul>
-                </xf:group>-->
+                        <p><sup>4 </sup><a href="http://timemapper.okfnlabs.org/anon/ik4x3a-timemapper-comics-readership-example">http://timemapper.okfnlabs.org/anon/ik4x3a-timemapper-comics-readership-example</a></p>                    
+                </xf:group>             
             </xf:group>
         </div>
         <!-- Latest compiled and minified JavaScript -->
