@@ -73,8 +73,14 @@
                 margin-right: auto;
                 
             }
-            .sample{
+            #choro{
                 margin: 0 2% 2% 0;
+                width: 600px;
+                float: left;
+                                
+            }
+            #network{
+                margin: 0 2% 2% 4%;
                 width: 600px;
                 float: left;
                                 
@@ -123,13 +129,13 @@
                 </xf:group>                
                 <xf:group id="sketches">
                     <h3>Sketches/preliminary visualizations</h3>
-                    <div class="sample">
+                    <div id="choro">
                         <h4>Choropleth map of letters by U.S. state:</h4>
                         <img src="resources/letters-choro.svg" alt="Choropleth map of comic book fan letters by U.S. state" />    
                     </div>              
-                    <div class="sample">
-                       <!-- <h4>Sample network visualization of comic book series and letter writers:</h4>
-                        <img src="resources/letters-choro.svg" alt="Choropleth map of comic book fan letters by U.S. state" />-->
+                    <div id="network">
+                        <h4>Sample network visualization of comic book series and letter writers:</h4>
+                        <img src="resources/cobra-network.svg" alt="Choropleth map of comic book fan letters by U.S. state" />
                     </div>
                 </xf:group>
                 <xf:group id="related-work">
