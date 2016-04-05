@@ -103,15 +103,15 @@
                 float: left;
             }
             #if{
-                width: 100%;
+                width: 60%;
                 height: auto;
             }
             #ls{
-                width: 100%;
+                width: 60%;
                 height: auto;
             }
             #li{
-                width: 100%;
+                width: 60%;
                 height: auto;
             }
             #sg{
