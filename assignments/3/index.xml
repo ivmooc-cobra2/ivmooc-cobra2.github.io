@@ -98,7 +98,7 @@
                 width: 100%;
                 float: left;
             }
-            #analysis{
+            #insights{
                 width: 100%;
                 float: left;
             }
@@ -133,6 +133,9 @@
             }
             .bold{
                 font-weight: bold;
+            }
+            .ital{
+                font-style: italic;
             }
             ]]>
         </style>
@@ -289,8 +292,17 @@
                     
                     
                 </xf:group>
-                <xf:group id="analysis">
-                    <h3>Analysis</h3>
+                <xf:group id="insights">
+                    <h3>Insights</h3>
+                    <p>The preliminary phase of visualization and analysis has revealed some basic insights regarding the contours of the data:</p>
+                    <ul>
+                        <li><span class="ital">Fantastic Four</span> (901 issues) and <span class="ital">The Amazing Spider-Man</span> (1092 issues) represented the greatest portion of the data by series, but <span class="ital">The Avengers</span> and <span class="ital">The X-Men</span> had the highest average of number of letters per issue (8.28 and 7.69 letters per issue, respectively).</li>
+                        <li>All 50 fifty US states and several other countries were represented in the data; California and New York were by far the biggest contributors.</li>
+                        <li>The letter writers in the dataset were overwhelmingly male, but the most active letter writer (Shirley Gorman, with 17 letters) was female.</li>
+                        <li>Alaska, New Hampshire, Idaho, Arizona, and New Mexico were the only states with a proportion of female-to-male letter writers greater than 25% (1:4).</li>
+                        <li>By region, the Pacific Northwest had the highest proportion of female-to-male letter writers.</li>
+                    </ul>
+                    <p>The next phase of visualization and analysis should yield additional insights into the connections among the people, places, and comic books represented in the dataset.</p>
                 </xf:group>
                 <xf:group id="citations">
                     <h3>Citations</h3>
@@ -299,7 +311,7 @@
                         <p><sup>2 </sup><a href="http://graphicpolicy.com/2015/09/01/demo-graphics-comic-fandom-on-facebook-14/">http://graphicpolicy.com/2015/09/01/demo-graphics-comic-fandom-on-facebook-14/</a></p>
                         <p><sup>3 </sup><a href="http://ashishshendure.com/projects/ivmooc_cobra_2015/">http://ashishshendure.com/projects/ivmooc_cobra_2015/</a></p>
                         <p><sup>4 </sup><a href="http://timemapper.okfnlabs.org/anon/ik4x3a-timemapper-comics-readership-example">http://timemapper.okfnlabs.org/anon/ik4x3a-timemapper-comics-readership-example</a></p>
-                        <p><sup>5 </sup>We used the following packages: RCurl, dplyr, reshape2, ggplot2, map tools, scales, and RColorBrewer.</p>
+                        <p><sup>5 </sup>The following R packages were used: RCurl, dplyr, reshape2, ggplot2, map tools, scales, and RColorBrewer.</p>
                     
                 </xf:group>
                 
