@@ -71,26 +71,68 @@
                 margin-left: auto;
                 margin-right: auto;
                 
+                
             }
             #choro{
-                margin: 0 2% 2% 0;
+                margin: 0 2% 0 0;
                 width: 600px;
                 float: left;
                                 
             }
             #network{
-                margin: 0 2% 2% 4%;
+                margin: 0 2% 0 0;
                 width: 600px;
                 float: left;
+                
                                 
             }
             #related-work{
-                clear: both;
+                width: 100%;
+                float: left;
             }
+            #stats{
+                width: 100%;
+                float: left;
+            }
+            #viz{
+                width: 100%;
+                float: left;
+            }
+            #analysis{
+                width: 100%;
+                float: left;
+            }
+            #if{
+                
+                height: auto;
+            }
+            #ls{
+                
+                height: auto;
+            }
+            #li{
+                
+                height: auto;
+            }
+            #sg{
+                width: 100%;
+                height: auto;
+            }
+            #f2m{
+                width: 100%;
+                height: auto;
+            }            
             #gephi2{
                 width: 100%;
-                height: 100%;
+                height: auto;
                 background: black;
+            }
+            #citations{
+                width: 100%;
+                float: left;
+            }
+            .bold{
+                font-weight: bold;
             }
             ]]>
         </style>
@@ -147,13 +189,108 @@
                     <p>Although interesting, it is not clear that online sites with present-day statistics provide any significant guidance to the task of characterizing, analyzing, and visualizing the historical data segment presented in the CoBRA project. An expanded scope that includes comparison to present-day statistics might be useful.</p>
                     <p>A previous version of the CoBRA dataset has been visualized by Anirudh R. A., Ashish Shendure, Brittany Yoder, Jae Eun Kum, and Shambhavi Dhargalkar.<sup>3</sup> Our work will differ from theirs by focusing more on geospatial and network visualization techniques. Another exemplary visualization cited by Anirudh R. A. et al., which includes digital images and transcripts of comic book fan letters, can be found on the hosted TimeMapper website.<sup>4</sup></p>                              
                 </xf:group>
-                <xf:group id="stats">
+                <xf:group id="stats">                    
+                    <h3>Data cleaning and preprocessing</h3>                                                       
+                    <h4>Gender data</h4>                            
+                    <p>The approach to gender identification of names was based on using the Social Security Tables from 1880-1914 to identify registration trends. The tables were globbed into a master table and sorted by occurrence based on gender. The dominant count was used as the basis of projection: for example, in the case of the name "Billy," the ambigendrous ratio is given by: <code>Billy</code><code>Male</code><code>381527</code> <code>Billy</code><code>Female</code><code>5346</code>.</p> 
+                    <p>Based on historic registrations, "Billy" was projected to be female in only 1.38% of occurrences. Therefore the code was designed to project the name as male (barring any obvious contraindications such as a <code>person_title</code> value of "Mrs."</p>
+                    <h4>Geocoding data</h4>
+                    <p>Geocoding data from the Google Map web services has been harvested and will be utilized in the project's next phase of visualizations. Using street-level geocoding from Google allows for more granular mapping and visualization versus centroid-based geocoding found in applications such as Tableau (also, Tableau allows for custom geocoding import, so one can gain very granular geocoding information and still use Tableau visualizations). The particular tools used included the geopy module and Python (registration with Google was necessary). A further advantage of Google is the byproduct of corrected, standardized addressing (i.e., address cleaning) for possible future incorporation into the dataset.</p> 
+                    <p>In some cases preliminary cleaning of address data was necessary (e.g., where the city and state were recognizable known but the country was left null). This process preceded more granular address cleanup.</p>                  
+                    <h3>Summary statistics</h3>
+                    <p>A summary of the dataset is presented in the table below. An initial count of names in the dataset yielded a total of 3,168 unique names. Person data is in the process of being further cleaned and reconciled, so this figure may change.</p>
+                    
+                    <table class="table table-striped">                       
+                        <thead>
+                            <tr>
+                                <td>Comic book series</td>
+                                <td>Comic book issues</td>
+                                <td>Fan letters</td>
+                                <td>Countries</td>
+                                <td>Unique names of letter writers</td>
+                                <td>Gender of letter writers (inferred)</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>11</td>
+                                <td>610</td>
+                                <td>3703</td>
+                                <td>38</td>                                
+                                <td>3237</td>
+                                <td>
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <td>Male</td>
+                                                <td>Female</td>
+                                                <td>Null</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2863</td>
+                                                <td>266</td>
+                                                <td>108</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </xf:group>
                 <xf:group id="viz">
-                    <img id="gephi2" src="resources/cobra_gephi2.svg" alt="Force-directed network graph of comic book series with nodes color-coded by gender"></img>
+                    <h3>Visualizations</h3>
+                    <p>Our initial approach to visualizing the CoBRA data has focused on the variables of gender and geographic location (currently limited to US states). Methodologically, we have explored three techniques: statistical visualization, geospatial visualization, and network visualization.</p>
+                    <h4><span class="bold">Statistical</span></h4>
+                    <p>To analyze the fan letter data, a Pivot Table was created in Excel of all of the CoBRA data. For rows, the <code>series_name</code> and <code>issue_id</code> data fields were selected. For the value field, the count of <code>issue_id</code> was selected. This provided a count of fan letters for each individual issue and also provided an overall count of fan letters for each series.</p>
+                    <p>To create a frequency distribution of fan letters and issues, columns were numbered from the lowest value of fan letters per issue (1) to the highest value (71). A binary <code>=if()</code> statement matrix was created, referencing the values in the pivot tables to those of the numbered columns. If the number of fan letters was equal to the column number, the cell would show 1. If it did not, the cell would show 0. The columns were then totaled to obtain the number of individual issues receiving each number of fan letters. Once these values were obtained, a scatterplot was created with the x-axis representing the number of fan letters and the y-axis representing the number of issues.</p>
+                    <p>Referencing the same pivot table, a bar graphs of the total number of fan letters for each comic book series was created, as well as one for the average fan letters per issue in each series.</p>                    
+                    <h5><span class="bold">Frequency distribution of fan letters and issues</span></h5>                    
+                    <img id="if" src="resources/issue-freq.png" alt="Scatterplot of frequency distribution of fan letters and issues"/>
+                    <hr/>
+                    <h5><span class="bold">Total fan letters by series</span></h5>
+                    <img id="ls" src="resources/letters-series.png" alt="Histogram of total fan letters by series"/>
+                    <hr/>
+                    <h5><span class="bold">Average number of fan letters per issue, grouped by series</span></h5>
+                    <img id="li" src="resources/letters-issue.png" alt="Histogram of average number of fan letters per issue, grouped by series"/>
+                    <hr/>
+                    <h5><span class="bold">Bar graph of gender totals by state</span></h5>                    
+                    <img id="sg" src="resources/state-gender.png" alt="Bar graph of gender totals by state"/>
+                    <hr/>
+                    <h4><span class="bold">Geospatial</span>: choropleth map of the proporation of female-to-male letter writers by US state</h4>
+                    <p>To visualize the female-to-male proportion of CoBRA letter writers R, was utilized to analyze, clean, and reshape data.<sup>5</sup> From there, shape files from ArcGIS were used to map the female-to-male proportion of US letter writers. The data was read from R and persons were filtered by <code>id_person_dim</code> to identify unique authors and then grouped by gender and state to aggregate gender totals.</p> 
+                    <p>The female-to-male proportion was calculated from these totals and map tools were used to map, fortify, and merge state dimensions to state names from the data file. This data was plotted as a Choropleth Map with ggplot2. The higher the proportion of female-to-male values, the darker the shade of red.</p>                       
+                    
+                    <img id="f2m" src="resources/f2m.png" alt="Choropleth map showing proportion of female-to-male letter writers by state"></img>
+                    <hr/>
+                    <h4><span class="bold">Network</span>: force-directed graph of comic book series and letter writers, color-coded by gender</h4>
+                    <p>To visualize the connections among letter writers and comic book series, a force-directed network graph was encoded as a GraphML/XML file and rendered in Gephi. The BaseX XML database and XQuery interpreter was used to convert the CoBRA CSV data file into an internal XML representation. An XQuery script was then written to produce node and edge lists using GraphML notation. Node values were color-coded to distinguish between series nodes and letter-writer nodes, the latter of which were color-coded by gender (male, female, null).</p>
+                    <p>The resulting GraphML file contained a total of 3248 nodes and 3482 edges. Once imported into Gephi, a series of network statistics were calculated, including degree, betweenness centrality, and modularity class. These statistics are still being explored and have not yet been incorporated into additional visualizations. The network was laid out using Gephi's implementation of the Fruchterman Reingold force-directed layout, with the following parameters:</p>
+                    <table class="table table-striped">                       
+                        <thead>
+                            <tr>
+                                <td>Area</td>
+                                <td>Gravity</td>
+                                <td>Speed</td>                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10000.0</td>
+                                <td>7.0</td>
+                                <td>10.0</td>                                
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Nodes were then sized by degree, on a scale of 8 to 50, and proportionally sized node labels were added. Labels were then filtered to show only those labels whose nodes had a degree greater than 9.</p>
+                    <img id="gephi2" src="resources/cobra_gephi2.svg" alt="Force-directed network graph of comic book series with nodes color-coded by gender"/>
+                    
+                    
                 </xf:group>
                 <xf:group id="analysis">
-                    
+                    <h3>Analysis</h3>
                 </xf:group>
                 <xf:group id="citations">
                     <h3>Citations</h3>
@@ -162,6 +299,7 @@
                         <p><sup>2 </sup><a href="http://graphicpolicy.com/2015/09/01/demo-graphics-comic-fandom-on-facebook-14/">http://graphicpolicy.com/2015/09/01/demo-graphics-comic-fandom-on-facebook-14/</a></p>
                         <p><sup>3 </sup><a href="http://ashishshendure.com/projects/ivmooc_cobra_2015/">http://ashishshendure.com/projects/ivmooc_cobra_2015/</a></p>
                         <p><sup>4 </sup><a href="http://timemapper.okfnlabs.org/anon/ik4x3a-timemapper-comics-readership-example">http://timemapper.okfnlabs.org/anon/ik4x3a-timemapper-comics-readership-example</a></p>
+                        <p><sup>5 </sup>We used the following packages: RCurl, dplyr, reshape2, ggplot2, map tools, scales, and RColorBrewer.</p>
                     
                 </xf:group>
                 
