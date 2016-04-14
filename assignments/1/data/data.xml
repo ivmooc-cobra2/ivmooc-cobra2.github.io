@@ -69,5 +69,6 @@
         <task date="2016-03-21" completed="true">Submitted Assignment 1</task>        
         <task date="2016-03-28" completed="true">Submitted Assignment 2: User and Task Analysis, #1-#5</task>
         <task date="2016-03-29" completed="false">Submit Assignment 3: Presentation of Project Plans, #6-#8</task>
+         <task date="2016-04-18" completed="false">Submit Assignment 3: Intermediate Project Results</task>
     </tasks>
 </data>
