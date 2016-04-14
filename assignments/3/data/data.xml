@@ -66,6 +66,7 @@
         <task date="2016-03-13" completed="true" link="https://github.com/ivmooc-cobra2">Created GitHub repository</task>
         <task date="2016-03-20" completed="true">Created GitHub Pages website</task>
         <task date="2016-03-21" completed="true">Submitted Assignment 1</task>        
-        <task date="2016-03-28" completed="false">Submit Assignment 2: User and Task Analysis</task>
+        <task date="2016-03-28" completed="true">Submit Assignment 2: User and Task Analysis</task>
+        <task date="2016-04-18" completed="false">Submit Assignment 3: Intermediate Project Results</task>
     </tasks>        
 </data>
