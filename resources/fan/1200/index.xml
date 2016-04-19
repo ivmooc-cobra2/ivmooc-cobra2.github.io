@@ -18,7 +18,7 @@
     <script type="text/javascript" id="sgvzlr_script" src="http://mgskjaeveland.github.io/sgvizler/v/0.6/sgvizler.min.js">/* */</script>
     <script type="text/javascript">
             sgvizler
-                .defaultEndpointURL("http://sws.ifi.uio.no/sparql/npd")                
+                .defaultEndpointURL("http://bibfram.es/fuseki/cobra/query");                
      
             //// Leave this as is. Ready, steady, go!
             $(document).ready(sgvizler.containerDrawAll);
