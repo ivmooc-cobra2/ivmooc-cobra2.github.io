@@ -5,39 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-            <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">/* */</script>
+            <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js">/* */</script>
         <![endif]-->
-    <title/>
-    <script type="text/css" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
-    <style type="text/css">
-            
-            #work{
-                background-color: lightblue;
-                margin-top: 2%;
-                margin-left: 1%;
-                padding: 1%;
-                border: 1px solid black;
-            }
-            #instance{
-                margin-left: 1%;
-            }
-            #item{
-                margin-left: 1%;
-            }
-            #annotation{
-                margin-left: 1%;
-                padding: 1%;
-            
-            }
-        </style>
+    <title>Fan page: Philip Rizzo</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">/* */</script>
+    <script type="text/javascript" src="https://www.google.com/jsapi">/* */</script>
+    <script type="text/javascript" id="sgvzlr_script" src="http://mgskjaeveland.github.io/sgvizler/v/0.6/sgvizler.min.js">/* */</script>
+    <script type="text/javascript">
+            sgvizler
+                .defaultEndpointURL("http://sws.ifi.uio.no/sparql/npd")                
+     
+            //// Leave this as is. Ready, steady, go!
+            $(document).ready(sgvizler.containerDrawAll);
+        </script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">/* */</script>
     <meta name="title" content="Philip Rizzo"/>
     <meta property="dc:title" content="Philip Rizzo"/>
     <meta property="og:title" content="Philip Rizzo"/>
     <meta name="author" content="Philip Rizzo"/>
     <meta name="dc:creator" content="Philip Rizzo"/>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"/>
-    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"/>
   </head>
   <body prefix="cbo: http://comicmeta.org/cbo/ dc: http://purl.org/dc/elements/1.1/ dcterms: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ oa: http://www.w3.org/ns/oa# rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# schema: http://schema.org/ skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
     <div id="wrapper" class="container" about="http://ivmooc-cobra2.github.io/resources/fan/47" typeof="http://comicmeta.org/cbo/Fan">
@@ -68,7 +60,7 @@
       </dl>
       <div id="address" rel="http://schema.org/address" resource="http://ivmooc-cobra2.github.io/resources/place/46" typeof="http://schema.org/Place">
         <h2>
-          <a href="http://ivmooc-cobra2.github.io/resources/place/46">Address</a>
+          <a href="http://ivmooc-cobra2.github.io/resources/place/46">Location</a>
         </h2>
         <div rel="http://schema.org/address" typeof="http://schema.org/PostalAddress" resource="http://ivmooc-cobra2.github.io/resources/place/46/address">
           <dl>
@@ -133,6 +125,7 @@
           </dl>
         </div>
       </div>
+      <div id="sgvzl_example_query" data-sgvizler-endpoint="http://bibfram.es/fuseki/cobra/query" data-sgvizler-query="PREFIX dc: &lt;http://purl.org/dc/elements/1.1/&gt;                            PREFIX cbo: &lt;http://comicmeta.org/cbo/&gt;                            PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;                           PREFIX schema: &lt;http://schema.org/&gt;                           SELECT ?lat ?long                                     WHERE {                                        ?fan schema:address ?Place .                                        ?Place schema:geo ?Geo .                                        ?Geo schema:latitude ?lat .                                        ?Geo schema:longitude ?long .                                        FILTER(?fan = http://ivmooc-cobra2.github.io/resources/fan/47)                                    }" data-sgvizler-chart="google.visualization.GeoChart" data-sgvizler-loglevel="3" style="width:800px; height:400px;"/>
     </div>
   </body>
 </html>
