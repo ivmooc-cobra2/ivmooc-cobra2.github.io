@@ -171,6 +171,16 @@
                     </xf:repeat>
                 </xf:group>
                 <hr />
+                <xf:group id="work-in-progress">
+                    <h3>Link to current <a href="/resources/fans/530/"
+                            >work-in-progress</a>.</h3>
+                    <p>This page represents one of the letter-writers from the
+                        dataset and is an example of an attempt to use linked
+                        data to visualize some of the relationships present in
+                        the data. In a final version, the page will contain
+                        active links to other pages representing other entities
+                        in the CoBRA universe (places, comics, people).</p>
+                </xf:group>
                 <xf:group id="scope">
                     <h3>Project scope and significance</h3>
                     <p>The project will produce a thematic visualization of
@@ -469,9 +479,10 @@
                         had a degree greater than 9.</p>
                     <hr />
                     <h4>Link to preliminary network visualization</h4>
-                    <h5><a href="resources/gephi.xml"><span class="bold">Force-directed
-                                network graph of comic book series with nodes
-                                color-coded by gender</span></a></h5>
+                    <h5><a href="resources/gephi.xml"><span class="bold"
+                                >Force-directed network graph of comic book
+                                series with nodes color-coded by
+                            gender</span></a></h5>
                     <hr />
                 </xf:group>
                 <xf:group id="insights">
