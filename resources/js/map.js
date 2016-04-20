@@ -28,7 +28,7 @@
         var feature = new OpenLayers.Feature.Vector(
                 new OpenLayers.Geometry.Point( lon, lat ).transform(epsg4326, projectTo),
                 {description: "marker number " + i} ,
-                {externalGraphic: '/static/resources/img/location.red.svg', graphicHeight: 24, graphicXOffset:-12, graphicYOffset:-25  }
+                {externalGraphic: '/resources/img/location.red.svg', graphicHeight: 24, graphicXOffset:-12, graphicYOffset:-25  }
             );             
         vectorLayer.addFeatures(feature);
     }                        
