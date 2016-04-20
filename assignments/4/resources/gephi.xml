@@ -165,7 +165,7 @@
                 <hr/>
 
                 <xf:group id="viz">
-                    <img id="gephi2" src="resources/cobra_gephi2.svg"
+                    <img id="gephi2" src="/assignments/4/resources/cobra_gephi2.svg"
                         alt="Force-directed network graph of comic book series
                         with nodes color-coded by gender"/>
                    
