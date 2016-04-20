@@ -178,9 +178,9 @@
                     <p>This page represents one of the letter-writers from the
                         dataset and is an example of an attempt to use linked
                         data to visualize some of the relationships present in
-                        the data. In a final version, the page will contain
-                        active links to other pages representing other entities
-                        in the CoBRA universe (places, comics, people).</p>
+                        the dataset. In a final version, the page will contain
+                        active links to pages representing other entities
+                        in the CoBRA universe (places, comics, fans).</p>
                 </xf:group>
                 <xf:group id="scope">
                     <h3>Project scope and significance</h3>
