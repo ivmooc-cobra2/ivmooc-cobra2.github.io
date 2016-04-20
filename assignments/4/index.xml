@@ -175,10 +175,10 @@
                     <h3>Link to current <a href="/resources/fans/530/"
                         target="_blank"
                             >work-in-progress</a>.</h3>
-                    <p>This page represents one of the letter-writers from the
+                    <p class="ital">This page represents one of the letter-writers from the
                         dataset and is an example of an attempt to use linked
                         data to visualize some of the relationships present in
-                        the dataset. In a final version, the page will contain
+                        the data. In a final version, the page will contain
                         active links to pages representing other entities
                         in the CoBRA universe (places, comics, fans).</p>
                 </xf:group>
@@ -761,7 +761,7 @@
                     <p><sup>5 </sup>The following R packages were used: RCurl,
                         dplyr, reshape2, ggplot2, map tools, scales, and
                         RColorBrewer.</p>
-                    <p><sup>5 </sup>Anderson, B. 1983. <span style="ital"
+                    <p><sup>5 </sup>Anderson, B. 1983. <span class="ital"
                             >Imagined Communities: Reflections on the Origin and
                             Spread of Nationalism</span>. London, England:
                         Verso.</p>
