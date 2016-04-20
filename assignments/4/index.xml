@@ -163,10 +163,10 @@
                     <xf:repeat nodeset="group/people/person">
                         <div class="authors">
                             <a href="{@canvas}">
-                                <xf:output value="name"></xf:output>
+                                <xf:output value="name"/>
                             </a>
                             <div>Indiana University</div>
-                            <xf:output value="@mail"></xf:output>
+                            <xf:output value="@mail"/>
                         </div>
                     </xf:repeat>
                 </xf:group>
