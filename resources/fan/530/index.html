@@ -91,14 +91,14 @@ XsltForms_xpathEngine = "";
                text-decoration: none !important;
                border: 0 none !important;
            }
-            #mapdiv{
+            .left-viz{
                width: 40%;
                margin-right: 1%;               
                float: right;              
                height: 300px;            
                border: 1px solid black;                 
            } 
-           #viz{
+           .right-viz{
                width: 460px;
                height: 300px;
                margin-left: 1%;
@@ -345,8 +345,8 @@ XsltForms_browser.events.attach(window, "load", xsltforms_init);
                 </dd>
               </dl>
                 </div>
-                <svg id="viz" xmlns="http://www.w3.org/2000/svg"></svg>
-                <div id="mapdiv"></div>
+                <svg class="right-viz" id="viz" xmlns="http://www.w3.org/2000/svg"></svg>
+                <div class="left-viz" id="mapdiv"></div>
                 
             </div>
           </div>
@@ -486,6 +486,8 @@ XsltForms_browser.events.attach(window, "load", xsltforms_init);
                   <span property="http://schema.org/addressCountry">US</span>
                 </dd>
               </dl>
+                <svg class="right-viz" id="viz" xmlns="http://www.w3.org/2000/svg"></svg>
+                <div class="left-viz" id="mapdiv"></div>
             </div>
           </div>
           <div class="place" rel="http://schema.org/address" resource="http://ivmooc-cobra2.github.io/resources/place/1314" typeof="http://schema.org/Place">
@@ -632,6 +634,8 @@ XsltForms_browser.events.attach(window, "load", xsltforms_init);
                   <span property="http://schema.org/addressCountry">US</span>
                 </dd>
               </dl>
+                <svg class="right-viz" id="viz" xmlns="http://www.w3.org/2000/svg"></svg>
+                <div class="left-viz" id="mapdiv"></div>
             </div>
           </div>
           <div class="place" rel="http://schema.org/address" resource="http://ivmooc-cobra2.github.io/resources/place/2871" typeof="http://schema.org/Place">
@@ -727,6 +731,8 @@ XsltForms_browser.events.attach(window, "load", xsltforms_init);
               </dl>              
             </div>
           </div>
+            <svg class="right-viz" id="viz" xmlns="http://www.w3.org/2000/svg"></svg>
+            <div class="left-viz" id="mapdiv"></div>
         </div>
       </div>
      
