@@ -600,7 +600,7 @@
                             <li>street addresses not always clean enough to pass
                                 through Google</li>
                             <li>street addresses that use non-standard
-                                designations (e.g. "barracks" rather than
+                                designations (e.g., "barracks" rather than
                                 street)</li>
                             <li>street designations that Google silently passes
                                 to a centroid based on city, state, country</li>
