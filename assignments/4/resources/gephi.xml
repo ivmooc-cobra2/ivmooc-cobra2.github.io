@@ -140,7 +140,7 @@
             ]]>
         </style>
         <xf:model id="default-model">
-            <xf:instance id="default-instance" src="data/data.xml"/>            
+            <xf:instance id="default-instance" src="../data/data.xml"/>            
         </xf:model>
     </head>
     <body>
