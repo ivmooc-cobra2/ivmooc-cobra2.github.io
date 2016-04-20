@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../../xsltforms/xsl/xsltforms.xsl" type="text/xsl"?>
+<?xsltforms-options domengine="name=Fleur;url=../../xsltforms/js/fleur.js;uri=http://www.agencexml.com/Fleur;version=1.0"?>
+<?xsltforms-options debug="no"?>
+<?css-conversion no?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cwb="http://bibfram.es/cwb/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:oa="http://www.w3.org/ns/oa#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xf="http://www.w3.org/2002/xforms"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <head>
+        <title>IVMOOC16 CoBRA Group 2 Project Website</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+        <!-- Optional theme -->
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"/>
+        <style type="text/css">
+            <![CDATA[
+            #wrapper{
+                width: 80%;                
+                min-height: 1000px;
+                margin-top: 1%;
+                margin-right: auto;
+                margin-left: auto;
+                margin-bottom: 2%;
+                background-color: #C0C0C0;                
+            }
+            #title{
+                text-align: center;
+            }
+            .xforms-label{
+                
+            }
+            .checkbox{
+                list-style-type: none;
+            }
+            #group-people{
+                
+            }
+            #group-tasks{
+               
+            }
+            #authorship{               
+               width: 100%;
+               margin-right: auto;
+               margin-left: auto;
+               text-align: center;
+            }            
+            .authors{
+                margin-top: 1%;
+                width: 20%;
+                float: left;                                               
+            }
+            hr{
+                color: white;
+                width: 100%;
+                float: left;
+            }
+            #sketches{
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                
+                
+            }
+            #choro{
+                margin: 0 2% 0 0;
+                width: 600px;
+                float: left;
+                                
+            }
+            #network{
+                margin: 0 2% 0 0;
+                width: 600px;
+                float: left;
+                
+                                
+            }
+            #related-work{
+                width: 100%;
+                float: left;
+            }
+            #stats{
+                width: 100%;
+                float: left;
+            }
+            #viz{
+                width: 100%;
+                float: left;
+            }
+            #insights{
+                width: 100%;
+                float: left;
+            }
+            #if{
+                width: 60%;
+                height: auto;
+            }
+            #ls{
+                width: 60%;
+                height: auto;
+            }
+            #li{
+                width: 60%;
+                height: auto;
+            }
+            #sg{
+                width: 100%;
+                height: auto;
+            }
+            #f2m{
+                width: 100%;
+                height: auto;
+            }            
+            #gephi2{
+                width: 100%;
+                height: auto;
+                background: black;
+            }
+            #citations{
+                width: 100%;
+                float: left;
+            }
+            .bold{
+                font-weight: bold;
+            }
+            .ital{
+                font-style: italic;
+            }
+            ]]>
+        </style>
+        <xf:model id="default-model">
+            <xf:instance id="default-instance" src="data/data.xml"/>            
+        </xf:model>
+    </head>
+    <body>
+        <div id="wrapper" class="container">
+            <div id="title">
+                <h1>Comic Book Readership Archive (CoBRA)</h1>
+                <h2>Exploring Comic Book Fan Mail across Gender and Geography</h2>
+            </div>
+            <xf:group ref="/data">
+                <xf:group id="authorship">
+                    <xf:repeat nodeset="group/people/person">
+                        <div class="authors">
+                            <a href="{@canvas}">
+                                <xf:output value="name"/>
+                            </a>
+                            <div>Indiana University</div>
+                            <xf:output value="@mail"/>
+                        </div>
+                    </xf:repeat>
+                    
+                </xf:group>                          
+                <hr/>
+
+                <xf:group id="viz">
+                    <img id="gephi2" src="resources/cobra_gephi2.svg"
+                        alt="Force-directed network graph of comic book series
+                        with nodes color-coded by gender"/>
+                   
+                    
+                </xf:group>
+            </xf:group>
+            <hr/>
+        </div>
+        <!-- Latest compiled and minified JavaScript -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </body>
+</html>

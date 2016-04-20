@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../../xsltforms/xsl/xsltforms.xsl" type="text/xsl"?>
+<?xsltforms-options domengine="name=Fleur;url=../../xsltforms/js/fleur.js;uri=http://www.agencexml.com/Fleur;version=1.0"?>
+<?xsltforms-options debug="no"?>
+<?css-conversion no?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cwb="http://bibfram.es/cwb/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:oa="http://www.w3.org/ns/oa#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xf="http://www.w3.org/2002/xforms"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <head>
+        <title>IVMOOC16 CoBRA Group 2 Project Website</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+        <!-- Optional theme -->
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" />
+        <style type="text/css">
+            <![CDATA[
+            #wrapper{
+                width:80%;
+                min-height:1000px;
+                margin-top:1%;
+                margin-right:auto;
+                margin-left:auto;
+                margin-bottom:2%;
+                background-color:#C0C0C0;
+            }
+            #title{
+                text-align:center;
+            }
+            .xforms-label{
+            
+            }
+            .checkbox{
+                list-style-type:none;
+            }
+            #group-people{
+            
+            }
+            #group-tasks{
+            
+            }
+            #authorship{
+                width:100%;
+                margin-right:auto;
+                margin-left:auto;
+                text-align:center;
+            }
+            .authors{
+                margin-top:1%;
+                width:20%;
+                float:left;
+            }
+            hr{
+                color:white;
+                width:100%;
+                float:left;
+            }
+            #sketches{
+                width:100%;
+                margin-left:auto;
+                margin-right:auto;
+            
+            
+            }
+            #choro{
+                margin:0 2% 0 0;
+                width:600px;
+                float:left;
+            
+            }
+            #network{
+                margin:0 2% 0 0;
+                width:600px;
+                float:left;
+            
+            
+            }
+            #related-work{
+                width:100%;
+                float:left;
+            }
+            #stats{
+                width:100%;
+                float:left;
+            }
+            #viz{
+                width:100%;
+                float:left;
+            }
+            #insights{
+                width:100%;
+                float:left;
+            }
+            #if{
+                width:60%;
+                height:auto;
+            }
+            #ls{
+                width:60%;
+                height:auto;
+            }
+            #li{
+                width:60%;
+                height:auto;
+            }
+            #sg{
+                width:100%;
+                height:auto;
+            }
+            #f2m{
+                width:100%;
+                height:auto;
+            }
+            #gephi2{
+                width:100%;
+                height:auto;
+                background:black;
+            }
+            #citations{
+                width:100%;
+                float:left;
+            }
+            .bold{
+                font-weight:bold;
+            }
+            .ital{
+                font-style:italic;
+            }
+            #validation{
+                width:100%;
+                float:left;
+            }
+            #challenges{
+                width:100%;
+                float:left;
+            }]]>
+        </style>
+        <xf:model id="default-model">
+            <xf:instance id="default-instance" src="data/data.xml"
+            ></xf:instance>
+        </xf:model>
+    </head>
+    <body>
+        <div id="wrapper" class="container">
+            <div id="title">
+                <h1>Comic Book Readership Archive (CoBRA)</h1>
+                <h2>Exploring Comic Book Fan Mail across Gender and
+                    Geography</h2>
+            </div>
+            <xf:group ref="/data">
+                <xf:group id="authorship">
+                    <xf:repeat nodeset="group/people/person">
+                        <div class="authors">
+                            <a href="{@canvas}">
+                                <xf:output value="name"></xf:output>
+                            </a>
+                            <div>Indiana University</div>
+                            <xf:output value="@mail"></xf:output>
+                        </div>
+                    </xf:repeat>
+                </xf:group>
+                <hr />
+                <xf:group id="scope">
+                    <h3>Project scope and significance</h3>
+                    <p>The project will produce a thematic visualization of
+                        published fan mail (taken from the time slice provided,
+                        1961-1973) and consisting of several subcomponents that
+                        address the relevant themes in the dataset:</p>
+                    <ul>
+                        <li>Geographic origin</li>
+                        <li>Gender representation</li>
+                        <li>Comic book series popularity</li>
+                    </ul>
+                    <p>These subcomponent visualizations will provide a unified
+                        view of comic book readership in the form of a world
+                        geospatial representation with a count analysis of
+                        letters published and a network analysis of letter
+                        writers and comic book series. The discrete quantifiable
+                        measures will include letter-writer breakdowns from U.S.
+                        states and countries and correlations among gender,
+                        location, and comic book series.</p>
+                    <p>The significance of the CoBRA project lies in its
+                        examination of an area of popular cultural
+                        studies--comic book fan letters--that has not yet been
+                        adequately research or documented. A historical database
+                        of fan letters provides a unique resource for answering
+                        research questions about the feedback loop between
+                        production and consumption in the comic book genre.</p>
+                </xf:group>
+                <xf:group id="sketches">
+                    <h3>Sketches/preliminary visualizations</h3>
+                    <div id="choro">
+                        <h4>Choropleth map of letters by U.S. state:</h4>
+                        <img src="resources/letters-choro.svg"
+                            alt="Choropleth map of comic book fan letters by U.S. state"
+                         />
+                    </div>
+                    <div id="network">
+                        <h4>Sample network visualization of comic book series
+                            and letter writers:</h4>
+                        <img src="resources/cobra-network.svg"
+                            alt="Choropleth map of comic book fan letters by U.S. state"
+                         />
+                    </div>
+                </xf:group>
+                <xf:group id="related-work">
+                    <h3>Related work</h3>
+                    <p>The textbook Visual Insights<sup>1</sup> contains
+                        exemplary visualizations and thematic presentations that
+                        are relevant to the CoBRA dataset, including the case
+                        studies "One Hundred Years of ISIS" (p. 262) and
+                        Visualizing NYC Hive (p. 268). The rough outline of our
+                        proposed CoBRA visualization is based on observing these
+                        thematic approaches to visualization and data
+                        encapsulation.</p>
+                    <p>A search on some of the reference suggestions in the
+                        CoBRA project description reveals a few scholarly
+                        articles and materials relevant to the history of comic
+                        book readership and relevant to the formation of the
+                        CoBRA project. These references are useful for
+                        understanding the context around the project, but not in
+                        terms of auxiliary raw data or exemplary
+                        visualizations.</p>
+                    <p>A search on comic-book readership online produces some
+                        more specific and contextually relevant data and
+                        visualization examples, including breakdowns of
+                        demographic-based and gender-based fan discussion and
+                        readership statistics. The Internet and Internet
+                        discussion and fan sites appear to be the modern
+                        replacement of older fan publications, and is naturally
+                        more expedient and simpler to harvest data from
+                        contemporary online sites and archives than from print
+                        sources. As an example, the Graphic Policy website
+                        details such statistics, as harvested from
+                            Facebook.<sup>2</sup> depicts pie-charts and line
+                        graphs depicting comic book demographics).</p>
+                    <p>Although interesting, it is not clear that online sites
+                        with present-day statistics provide any significant
+                        guidance to the task of characterizing, analyzing, and
+                        visualizing the historical data segment presented in the
+                        CoBRA project. An expanded scope that includes
+                        comparison to present-day statistics might be
+                        useful.</p>
+                    <p>A previous version of the CoBRA dataset has been
+                        visualized by Anirudh R. A., Ashish Shendure, Brittany
+                        Yoder, Jae Eun Kum, and Shambhavi
+                            Dhargalkar.<sup>3</sup> Our work will differ from
+                        theirs by focusing more on geospatial and network
+                        visualization techniques. Another exemplary
+                        visualization cited by Anirudh R. A. et al., which
+                        includes digital images and transcripts of comic book
+                        fan letters, can be found on the hosted TimeMapper
+                            website.<sup>4</sup></p>
+                </xf:group>
+                <xf:group id="stats">
+                    <h3>Data cleaning and preprocessing</h3>
+                    <h4>Gender data</h4>
+                    <p>The approach to gender identification of names was based
+                        on using the Social Security Tables from 1880-1914 to
+                        identify registration trends. The tables were globbed
+                        into a master table and sorted by occurrence based on
+                        gender. The dominant count was used as the basis of
+                        projection: for example, in the case of the name
+                        "Billy," the ambigendrous ratio is given by:
+                            <code>Billy</code><code>Male</code><code>381527</code>
+                        |
+                        <code>Billy</code><code>Female</code><code>5346</code>.</p>
+                    <p>Based on historic registrations, "Billy" was projected to
+                        be female in only 1.38% of occurrences. Therefore the
+                        code was designed to project the name as male (barring
+                        any obvious contraindications such as a
+                            <code>person_title</code> value of "Mrs."</p>
+                    <h4>Geocoding data</h4>
+                    <p>Geocoding data from the Google Map web services has been
+                        harvested and will be utilized in the project's next
+                        phase of visualizations. Using street-level geocoding
+                        from Google allows for more granular mapping and
+                        visualization versus centroid-based geocoding found in
+                        applications such as Tableau (also, Tableau allows for
+                        custom geocoding import, so one can gain very granular
+                        geocoding information and still use Tableau
+                        visualizations). The particular tools used included the
+                        geopy module and Python (registration with Google was
+                        necessary). A further advantage of Google is the
+                        byproduct of corrected, standardized addressing (i.e.,
+                        address cleaning) for possible future incorporation into
+                        the dataset.</p>
+                    <p>In some cases preliminary cleaning of address data was
+                        necessary (e.g., where the city and state were
+                        recognizable but the country was left null). This
+                        process preceded more granular address cleanup.</p>
+                    <h3>Summary statistics</h3>
+                    <p>A summary of the dataset is presented in the table below.
+                        An initial count of names in the dataset yielded a total
+                        of 3,168 unique names. Person data is in the process of
+                        being further cleaned and reconciled, so this figure may
+                        change.</p>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <td>Comic book series</td>
+                                <td>Comic book issues</td>
+                                <td>Fan letters</td>
+                                <td>Countries</td>
+                                <td>Unique names of letter writers</td>
+                                <td>Gender of letter writers (inferred)</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>11</td>
+                                <td>610</td>
+                                <td>3703</td>
+                                <td>38</td>
+                                <td>3237</td>
+                                <td>
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                        <td>Male</td>
+                                        <td>Female</td>
+                                        <td>Null</td>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                        <td>2863</td>
+                                        <td>266</td>
+                                        <td>108</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </xf:group>
+                <xf:group id="viz">
+                    <h3>Visualizations</h3>
+                    <p>Our initial approach to visualizing the CoBRA data has
+                        focused on the variables of gender and geographic
+                        location (currently limited to US states).
+                        Methodologically, we have explored three techniques:
+                        statistical visualization, geospatial visualization, and
+                        network visualization.</p>
+                    <h4><span class="bold">Statistical</span></h4>
+                    <p>To analyze the fan letter data, a Pivot Table was created
+                        in Excel of all of the CoBRA data. For rows, the
+                            <code>series_name</code> and <code>issue_id</code>
+                        data fields were selected. For the value field, the
+                        count of <code>issue_id</code> was selected. This
+                        provided a count of fan letters for each individual
+                        issue and also provided an overall count of fan letters
+                        for each series.</p>
+                    <p>To create a frequency distribution of fan letters and
+                        issues, columns were numbered from the lowest value of
+                        fan letters per issue (1) to the highest value (71). A
+                        binary <code>=if()</code> statement matrix was created,
+                        referencing the values in the pivot tables to those of
+                        the numbered columns. If the number of fan letters was
+                        equal to the column number, the cell would show 1. If it
+                        did not, the cell would show 0. The columns were then
+                        totaled to obtain the number of individual issues
+                        receiving each number of fan letters. Once these values
+                        were obtained, a scatterplot was created with the x-axis
+                        representing the number of fan letters and the y-axis
+                        representing the number of issues.</p>
+                    <p>Referencing the same pivot table, a histogram of the
+                        total number of fan letters for each comic book series
+                        was created, as well as one for the average number of
+                        fan letters per issue in each series.</p>
+                    <p>An additional histogram was created to represent the
+                        breakdown of gender by state.</p>
+                    <hr />
+                    <h4>Links to preliminary statistical visualizations</h4>
+                    <hr />
+                    <h5><a href="resources/issue-freq.png"><span class="bold"
+                                >Frequency distribution of fan letters and
+                                issues</span></a></h5>
+                    <hr />
+                    <h5><a href="resources/letters-series.png"><span
+                                class="bold">Total fan letters by
+                            series</span></a></h5>
+                    <hr />
+                    <h5><a href="resources/letters-issue.png"><span class="bold"
+                                >Average number of fan letters per issue,
+                                grouped by series</span></a></h5>
+                    <hr />
+                    <h5><a href="resources/state-gender.png"><span class="bold"
+                                >Bar graph of gender totals by
+                        state</span></a></h5>
+                    <hr />
+                    <h4><span class="bold">Geospatial</span>: choropleth map of
+                        the proporation of female-to-male letter writers by US
+                        state</h4>
+                    <p>To visualize the female-to-male proportion of CoBRA
+                        letter writers, R was utilized to analyze, clean, and
+                        reshape data.<sup>5</sup> From there, shape files from
+                        ArcGIS were used to map the female-to-male proportion of
+                        US letter writers. The data was read from R and persons
+                        were filtered by <code>id_person_dim</code> to identify
+                        unique authors and then grouped by gender and state to
+                        aggregate gender totals.</p>
+                    <p>The female-to-male proportion was calculated from these
+                        totals and map tools were used to map, fortify, and
+                        merge state dimensions to state names from the data
+                        file. This data was plotted as a Choropleth Map with
+                        ggplot2. The higher the proportion of female-to-male
+                        values, the darker the shade of red.</p>
+                    <hr />
+                    <h4>Link to preliminary geospatial visualization</h4>
+                    <h5><a href="resources/f2m.png"><span class="bold"
+                                >Choropleth map showing the proportion of
+                                female-to-male letter writers by
+                            state</span></a></h5>
+                    <hr />
+                    <h4><span class="bold">Network</span>: force-directed graph
+                        of comic book series and letter writers, color-coded by
+                        gender</h4>
+                    <p>To visualize the connections among letter writers and
+                        comic book series, a force-directed network graph was
+                        encoded as a GraphML/XML file and rendered in Gephi. The
+                        BaseX XML database and XQuery interpreter was used to
+                        convert the CoBRA CSV data file into an internal XML
+                        representation. An XQuery script was then written to
+                        produce node and edge lists using GraphML notation. Node
+                        values were color-coded to distinguish between series
+                        nodes and letter-writer nodes, the latter of which were
+                        color-coded by gender (male, female, null).</p>
+                    <p>The resulting GraphML file contained a total of 3248
+                        nodes and 3482 edges. Once imported into Gephi, a series
+                        of network statistics was calculated, including degree,
+                        betweenness centrality, and modularity class. These
+                        statistics are still being explored and have not yet
+                        been incorporated into additional visualizations. The
+                        network was laid out using Gephi's implementation of the
+                        Fruchterman Reingold force-directed layout, with the
+                        following parameters:</p>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <td>Area</td>
+                                <td>Gravity</td>
+                                <td>Speed</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10000.0</td>
+                                <td>7.0</td>
+                                <td>10.0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Nodes were then sized by degree, on a scale of 8 to 50,
+                        and proportionally sized node labels were added. Labels
+                        were then filtered to show only those labels whose nodes
+                        had a degree greater than 9.</p>
+                    <hr />
+                    <h4>Link to preliminary network visualization</h4>
+                    <h5><a href="gephi.xml"><span class="bold">Force-directed
+                                network graph of comic book series with nodes
+                                color-coded by gender</span></a></h5>
+                    <hr />
+                </xf:group>
+                <xf:group id="insights">
+                    <h3>Insights</h3>
+                    <p>The preliminary phase of visualization and analysis has
+                        revealed some basic insights regarding the contours of
+                        the data:</p>
+                    <ul>
+                        <li><span class="ital">Fantastic Four</span> (901
+                            issues) and <span class="ital">The Amazing
+                                Spider-Man</span> (1092 issues) represented the
+                            greatest portion of the data by series, but <span
+                                class="ital">The Avengers</span> and <span
+                                class="ital">The X-Men</span> had the highest
+                            average of number of letters per issue (8.28 and
+                            7.69 letters per issue, respectively).</li>
+                        <li>All 50 fifty US states and several other countries
+                            were represented in the data; California and New
+                            York were by far the biggest contributors.</li>
+                        <li>The letter writers in the dataset were
+                            overwhelmingly male, but the most active letter
+                            writer (Shirley Gorman, with 17 letters) was
+                            female.</li>
+                        <li>Alaska, New Hampshire, Idaho, Arizona, and New
+                            Mexico were the only states with a proportion of
+                            female-to-male letter writers greater than 25%
+                            (1:4).</li>
+                        <li>By region, the Pacific Northwest had the highest
+                            proportion of female-to-male letter writers.</li>
+                    </ul>
+                    <p>The next phase of visualization and analysis should yield
+                        additional insights into the connections among the
+                        people, places, and comic books represented in the
+                        dataset.</p>
+                </xf:group>
+                <xf:group id="validation">
+                    <h3>Validation and redesign</h3>
+                    <h4>Deduplication</h4>
+                    <p>During the data clean-up process, many records were
+                        observed to have duplicate names but different
+                            <code>id_person_dim</code> identifiers and different
+                        location information. Given the selective nature of the
+                        data, it is still very possible that these are the same
+                        individuals writing from different locations. For
+                        example:</p>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <td>id_person_dim</td>
+                                <td>Name</td>
+                                <td>Address</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2902</td>
+                                <td>Adams Richard</td>
+                                <td>102 Bryan Ct. Apt. 101 Laurel MD US
+                                    10810</td>
+                            </tr>
+                            <tr>
+                                <td>2458</td>
+                                <td>Adams Richard</td>
+                                <td>Rt. #1, Box 439 Oakiland MD US 21550</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>In this case, the issue dates are two years apart. It's
+                        reasonable to assume that Adam could have moved from
+                        Laurel, Maryland, to Oakland, Maryland. The following
+                        disambiguation algorithm was decided upon: if a name is
+                        the same, the address is within the same state, and the
+                        difference between publication dates is within 2 years,
+                        then identifiers for this person will be merged.</p>
+                    <p>In terms of workflow, all duplicate names were extracted
+                        with their identifiers to a new file (901 records) and
+                        merged according to the disambiguation algorithm.
+                        Finally, the cleaned file will be used to generate more
+                        visualizations whose data points are less dispersed.</p>
+                    <p>Conversely, there are also data validation issues for
+                        cases in which names are identical or similar, but the
+                        location is the same. For example:</p>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <td>id_person_dim</td>
+                                <td>Name</td>
+                                <td>Address</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2472</td>
+                                <td>Burton Mike</td>
+                                <td>1149 Greenwood St Bellefontaine OH</td>
+                            </tr>
+                            <tr>
+                                <td>2473</td>
+                                <td>Silvers Mike</td>
+                                <td>1149 Greenwood St Bellefontaine OH</td>
+                            </tr>
+                            <tr>
+                                <td>2583</td>
+                                <td>Burton Mike</td>
+                                <td>1149 Greenwood St Bellefontaine OH</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4>Geocoding</h4>
+                    <p>Centroid-based geocoding was augmented with street-level
+                        geocoding from Google’s geocoding web services, in order
+                        to potentially produce more informative geospatial
+                        visualizations. Several issues were encountered: <ol>
+                            <li>street addresses not always clean enough to pass
+                                through Google</li>
+                            <li>street addresses that use non-standard
+                                designations (e.g. "barracks" rather than
+                                street)</li>
+                            <li>street designations that Google silently passes
+                                to a centroid based on city, state, country</li>
+                        </ol>
+                    </p>
+                    <p>Addresses in these categories had to be flagged and
+                        manually inspected or modified. More generally, it is
+                        not clear that street-level geocoding adds much to the
+                        visualization (does a dot on South Denver inform more
+                        than a dot on centroid Denver on a small map?). At the
+                        same time, there is value in clean addresses in the
+                        overall dataset (the project curator might want a
+                        cleaned address scheme going forward), but this is not
+                        one of the deliverables asked for in the project scope. </p>
+                    <h4>Gender data</h4>
+                    <p>There is value, both as a learning exercise and to the
+                        overall dataset, of approaching gender identification of
+                        user names using a programmatic approach. The approach
+                        chosen was to take the Social Security Tables from 1880
+                        to 1914 and use these to identify registration trends
+                        (this approach is mentioned in the client project list
+                        of questions). The tables were aggregated into a master
+                        table and sorted by occurrence based on gender. Issues
+                        encountered included: <ol>
+                            <li>ambigendrous names—names that can be either male
+                                or female</li>
+                            <li>names that may be present in other countries but
+                                not reflected in the US SSA table
+                                registrations</li>
+                        </ol>
+                    </p>
+                    <p>In the case of ambigendrous names, a programmatic
+                        mitigation is possible. The dominant count was used as
+                        the basis of projection: for example, in the case of the
+                        name "Billy," the ambigendrous ratio is given as: <table
+                            class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Gender</td>
+                                    <td>Count</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Billy</td>
+                                    <td>Male</td>
+                                    <td>381527</td>
+                                </tr>
+                                <tr>
+                                    <td>Billy</td>
+                                    <td>Female</td>
+                                    <td>5346</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                    <p>Based on historic registrations, "Billy" was projected to
+                        be female in only 1.38% of occurrences. Therefore the
+                        code was designed to project the name as male (barring
+                        any obvious contraindications such as a title of "Mrs."
+                        There are other cases that are not as clear-cut, and in
+                        which manual intervention was necessary. For example,
+                        one individual had the first name "Robin" and middle
+                        name given as "Christopher": in this case Robin
+                        indicates female, but the addition of Christopher as a
+                        middle name clearly suggests male. These cases had to be
+                        flagged and mitigated manually, in lieu of additional
+                        programming logic to add middle names to the gender
+                        scoring process.</p>
+                    <p>In the case of non-US names, these had to be mitigated
+                        manually based on Google searches of name origin, usage,
+                        and meaning.</p>
+                    <h4>Uniqueness criteria</h4>
+                    <p>One aspect of analysis that came up in the midst of
+                        initial visualizations was the question of relating
+                        unique versus aggregated data points for a single letter
+                        writer. Many questions that one may attempt to visualize
+                        have an implicit assumption of uniqueness or
+                        non-uniqueness that must be addressed as part of the
+                        analysis. For example, in a geospatial visualization, if
+                        the same writer produces a significant number of letters
+                        from a single location, should that be part of the
+                        visualization or should that writer count as weight 1.
+                        As an extreme consider, for example, if a single writer
+                        from a town in Australia were to write 100 letters: the
+                        visualization might lead one to believe that a certain
+                        comic book had a significant following in Australia,
+                        which would be misleading. Uniqueness and distinctness
+                        are important to understand and relate.</p>
+                </xf:group>
+                <xf:group id="challenges">
+                    <h3>Challenges and opportunities</h3>
+                    <h4>Visualization design and data modeling</h4>
+                    <p>One of the unique challenges of the CoBRA dataset lies in
+                        finding a visualization approach that does justice to
+                        the number of connections and relationships within the
+                        data. The data was created using a relational database
+                        schema, so many of those linkages are present, but they
+                        may not be easy to highlight and visualize.</p>
+                    <p>The issue of connectedness seems especially important to
+                        the CoBRA data. One of the insights that has emerged
+                        during the course of analysis is the importance of comic
+                        books as a locus of community and connection across time
+                        and space. There are several instances of multiple
+                        letters from different individuals located in the same
+                        place. Take the case, for example, of Ann, Valerie,
+                        Wendy, Barbara, and Mary, who all wrote letters from 1
+                        Sundial Lane in Birmingham, England, to the <span
+                            span="ital">Fantastic Four</span> fan page in April
+                        and May of 1968. There are other case of letters that
+                        appear to come from the same household, apartment
+                        building, or military barracks, suggesting that comics
+                        can form an "imagined community" of readers (to borrow
+                        Benedict Anderson's well-known phrase).<sup>5</sup></p>
+                    <p>To address these challenges and attempt to convey a sense
+                        of the complex interplay of time, space, and
+                        relationships in the dataset, a different approach to
+                        data modeling was adopted. A reduced version of the
+                        master data table was created by removing columns that
+                        contained administrative data. This core data table was
+                        uploaded to the Karma data integration tool,<sup>6</sup>
+                        a platform for converting relational data into linked
+                        data using Semantic Web principles, vocabularies, and
+                        protocols. In Karma, columns and rows were mapped to
+                        linked data vocabularies such as Sean Petiya's Comic
+                        Book Ontology.<sup>7</sup></p>
+                    <p>The RDF linked data generated by Karma was then further
+                        cleaned and converted to RDFa (RDF in Attributes) for
+                        embedding into HTML Web pages.<sup>8</sup> A primary
+                        component of the CoBRA Group 2 visualization deliverable
+                        will focus on the ability to explore and visualize data
+                        linkages through online exploration and navigation. The
+                        preliminary architecture of the project website reflect
+                        an attempt to implement "5-star linked data," following
+                        the principles outlined by Tim Berners-Lee.<sup>9
+                        </sup></p>
+                    <p>An example of what this approach might look like in
+                        practice is provided in this page for <a
+                            href="http://ivmooc-cobra2.github.io/resources/fans/530/"
+                            >this page for Shirley A. Gorman</a>, the most
+                        profilic letter-writer in the dataset.</p>
+                </xf:group>
+                <xf:group id="citations">
+                    <h3>Citations</h3>
+                    <p><sup>1 </sup>Börner, K., and D. E. Polley. 2014.
+                            <i>Visual Insights</i>. Cambridge, MA: MIT
+                        Press.</p>
+                    <p><sup>2 </sup><a
+                            href="http://graphicpolicy.com/2015/09/01/demo-graphics-comic-fandom-on-facebook-14/"
+                            >http://graphicpolicy.com/2015/09/01/demo-graphics-comic-fandom-on-facebook-14/</a></p>
+                    <p><sup>3 </sup><a
+                            href="http://ashishshendure.com/projects/ivmooc_cobra_2015/"
+                            >http://ashishshendure.com/projects/ivmooc_cobra_2015/</a></p>
+                    <p><sup>4 </sup><a
+                            href="http://timemapper.okfnlabs.org/anon/ik4x3a-timemapper-comics-readership-example"
+                            >http://timemapper.okfnlabs.org/anon/ik4x3a-timemapper-comics-readership-example</a></p>
+                    <p><sup>5 </sup>The following R packages were used: RCurl,
+                        dplyr, reshape2, ggplot2, map tools, scales, and
+                        RColorBrewer.</p>
+                    <p><sup>5 </sup>Anderson, B. 1983. <span style="ital"
+                            >Imagined Communities: Reflections on the Origin and
+                            Spread of Nationalism</span>. London, England:
+                        Verso.</p>
+                    <p><sup>6 </sup><a href="http://usc-isi-i2.github.io/karma/"
+                            >http://usc-isi-i2.github.io/karma/</a></p>
+                    <p><sup>7 </sup>Petiya, S. 2015. "Comic Book Ontology." <a
+                            href="https://comicmeta.org/cbo/"
+                            >https://comicmeta.org/cbo/</a></p>
+                    <p><sup>8 </sup><a href="https://www.w3.org/TR/rdfa-primer/"
+                            >https://www.w3.org/TR/rdfa-primer/</a></p>
+                    <p><sup>9 </sup><a href="http://5stardata.info/en/"
+                            >http://5stardata.info/en/</a></p>
+                </xf:group>
+                <!-- <xf:group id="group-people" ref="group/people">
+                    <h3>Group members: </h3>
+                    <xf:repeat nodeset="person">
+                        <ul>
+                            <li>
+                                <a href="{name/@canvas}">
+                                    <xf:output value="name"/>
+                                </a>
+                                <ul>
+                                    <li>Roles: 
+                                        <ul>
+                                            <xf:repeat nodeset="roles/role">
+                                                <li>
+                                                    <xf:output value="."/>
+                                                </li>
+                                            </xf:repeat>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>Skills: 
+                                        <ul>
+                                            <xf:repeat nodeset="skills/skill">
+                                                <li>
+                                                    <xf:output value="."/>
+                                                </li>
+                                            </xf:repeat>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </xf:repeat>
+                </xf:group>-->
+                <!--<xf:group id="group-tasks" ref="tasks">
+                    <h3>Group tasks: </h3>
+                    <ul>
+                        <xf:repeat nodeset="task">
+                            <li class="checkbox">
+                                <xf:input ref="@completed">
+                                    <xf:label/>
+                                </xf:input>
+                                <xf:output
+                                    value="concat(substring(@date, 6, 2),
+                                    '/',
+                                    substring(@date, 9, 2),
+                                    '/',
+                                    substring(@date, 1, 4))"/>
+                                <span>: </span>
+                                <xf:group ref="@link">
+                                    <a href="{@link}">
+                                        <xf:output value=".."/>
+                                    </a>
+                                </xf:group>
+                                <xf:group ref=".[not(@link)]">
+                                    <xf:output value="."/>
+                                </xf:group>
+                            </li>
+                        </xf:repeat>
+                    </ul>
+                </xf:group>-->
+            </xf:group>
+        </div>
+        <!-- Latest compiled and minified JavaScript -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </body>
+</html>

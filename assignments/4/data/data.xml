@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="">
+    <client>
+        <project canvas="https://iu.instructure.com/courses/1504930/pages/client-projects#cob">Comic Book Readership Archive (CoBRA)</project>
+        <name>Dr. John Walsh</name>
+    </client>
+    <group>
+        <people>
+            <person canvas="https://iu.instructure.com/groups/254198/users/6000054" mail="mibarron@indiana.edu">
+                <name>Michael Barron</name>
+                <roles>
+                    <role>Data cleanup and preprocessing</role>
+                    <role>Data analysis</role>
+                    <role>Data visualization</role>
+                </roles>
+                <skills>
+                    <skill>Statistical analysis</skill>
+                </skills>
+            </person>
+            <person canvas="https://iu.instructure.com/groups/254198/users/5993917" mail="steeleb@iu.edu">
+                <name>Brett Steele</name>
+                <roles>
+                    <role>Project communications (Slack)</role>
+                    <role>Data analysis</role>
+                    <role>Data visualization</role>
+                </roles>
+                <skills>
+                    <skill>R</skill>
+                </skills>
+            </person>
+            <person canvas="https://iu.instructure.com/groups/254198/users/5592060" mail="timathom@indiana.edu">
+                <name>Tim Thompson</name>                
+                <roles>
+                    <role>Data/code repository setup and maintenance (GitHub)</role>
+                    <role>Data visualization</role>
+                    <role>Leader (responsible for assignment submissions)</role>
+                </roles>
+                <skills>
+                    <skill>Metadata/structured data formats</skill>
+                </skills>
+            </person>
+            <person canvas="https://iu.instructure.com/groups/254198/users/3628875" mail="yifaxu@indiana.edu">
+                <name>Yifan Xu</name>
+                <roles>
+                    <role>Data analysis</role>
+                    <role>Data visualization</role>
+                </roles>
+                <skills>
+                    <skill>SQL</skill>
+                </skills>
+            </person>
+            <person canvas="https://iu.instructure.com/groups/254198/users/5907087" mail="ray.zupancic@gmail.com">
+                <name>Ray Zupancic</name>
+                <roles>
+                    <role>Data cleanup and preprocessing</role>
+                    <role>Data analysis</role>
+                </roles>
+                <skills>
+                    <skill>Python</skill>
+                </skills>
+            </person>
+        </people>
+    </group>
+    <tasks>
+        <task date="2016-03-12" completed="true">Created Slack channel</task>
+        <task date="2016-03-13" completed="true" link="https://github.com/ivmooc-cobra2">Created GitHub repository</task>
+        <task date="2016-03-20" completed="true">Created GitHub Pages website</task>
+        <task date="2016-03-21" completed="true">Submitted Assignment 1</task>        
+        <task date="2016-03-28" completed="true">Submit Assignment 2: User and Task Analysis</task>
+        <task date="2016-04-18" completed="false">Submit Assignment 3: Intermediate Project Results</task>
+    </tasks>        
+</data>
