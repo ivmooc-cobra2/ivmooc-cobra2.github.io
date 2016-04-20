@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="../../../xsltforms/xsl/xsltforms.xsl" type="text/xsl"?>
-<?xsltforms-options domengine="name=Fleur;url=../../../xsltforms/js/fleur.js;uri=http://www.agencexml.com/Fleur;version=1.0"?>
+<?xml-stylesheet href="/xsltforms/xsl/xsltforms.xsl" type="text/xsl"?>
+<?xsltforms-options domengine="name=Fleur;url=/xsltforms/js/fleur.js;uri=http://www.agencexml.com/Fleur;version=1.0"?>
 <?xsltforms-options debug="no"?>
 <?css-conversion no?>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:cwb="http://bibfram.es/cwb/"
