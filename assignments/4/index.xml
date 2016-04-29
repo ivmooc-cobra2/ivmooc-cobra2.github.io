@@ -172,7 +172,7 @@
                 </xf:group>
                 <hr />
                 <xf:group id="work-in-progress">
-                    <h3>Link to current <a href="/resources/fans/530/"
+                    <h3>Link to current <a href="//home/tat2/datasci/ivmooc/client/ivmooc-cobra2.github.io/assignments/4/fans/530/"
                         target="_blank"
                             >work-in-progress</a>.</h3>
                     <p class="ital">This page represents one of the letter-writers from the
@@ -213,14 +213,14 @@
                     <h3>Sketches/preliminary visualizations</h3>
                     <div id="choro">
                         <h4>Choropleth map of letters by U.S. state:</h4>
-                        <img src="resources/letters-choro.svg"
+                        <img src="/home/tat2/datasci/ivmooc/client/ivmooc-cobra2.github.io/assignments/4/letters-choro.svg"
                             alt="Choropleth map of comic book fan letters by U.S. state"
                          />
                     </div>
                     <div id="network">
                         <h4>Sample network visualization of comic book series
                             and letter writers:</h4>
-                        <img src="resources/cobra-network.svg"
+                        <img src="/home/tat2/datasci/ivmooc/client/ivmooc-cobra2.github.io/assignments/4/cobra-network.svg"
                             alt="Choropleth map of comic book fan letters by U.S. state"
                          />
                     </div>
@@ -396,19 +396,19 @@
                     <hr />
                     <h4>Links to preliminary statistical visualizations</h4>
                     <hr />
-                    <h5><a href="resources/issue-freq.png"><span class="bold"
+                    <h5><a href="/home/tat2/datasci/ivmooc/client/ivmooc-cobra2.github.io/assignments/4/issue-freq.png"><span class="bold"
                                 >Frequency distribution of fan letters and
                                 issues</span></a></h5>
                     <hr />
-                    <h5><a href="resources/letters-series.png"><span
+                    <h5><a href="/home/tat2/datasci/ivmooc/client/ivmooc-cobra2.github.io/assignments/4/letters-series.png"><span
                                 class="bold">Total fan letters by
                             series</span></a></h5>
                     <hr />
-                    <h5><a href="resources/letters-issue.png"><span class="bold"
+                    <h5><a href="/home/tat2/datasci/ivmooc/client/ivmooc-cobra2.github.io/assignments/4/letters-issue.png"><span class="bold"
                                 >Average number of fan letters per issue,
                                 grouped by series</span></a></h5>
                     <hr />
-                    <h5><a href="resources/state-gender.png"><span class="bold"
+                    <h5><a href="/home/tat2/datasci/ivmooc/client/ivmooc-cobra2.github.io/assignments/4/state-gender.png"><span class="bold"
                                 >Bar graph of gender totals by
                         state</span></a></h5>
                     <hr />
@@ -431,7 +431,7 @@
                         values, the darker the shade of red.</p>
                     <hr />
                     <h4>Link to preliminary geospatial visualization</h4>
-                    <h5><a href="resources/f2m.png"><span class="bold"
+                    <h5><a href="/home/tat2/datasci/ivmooc/client/ivmooc-cobra2.github.io/assignments/4/f2m.png"><span class="bold"
                                 >Choropleth map showing the proportion of
                                 female-to-male letter writers by
                             state</span></a></h5>
@@ -480,7 +480,7 @@
                         had a degree greater than 9.</p>
                     <hr />
                     <h4>Link to preliminary network visualization</h4>
-                    <h5><a href="resources/gephi.xml"><span class="bold"
+                    <h5><a href="/home/tat2/datasci/ivmooc/client/ivmooc-cobra2.github.io/assignments/4/gephi.xml"><span class="bold"
                                 >Force-directed network graph of comic book
                                 series with nodes color-coded by
                             gender</span></a></h5>
@@ -740,7 +740,7 @@
                         </sup></p>
                     <p>An example of what this approach might look like in
                         practice is provided in <a
-                            href="http://ivmooc-cobra2.github.io/resources/fans/530/"
+                            href="http://ivmooc-cobra2.github.io//home/tat2/datasci/ivmooc/client/ivmooc-cobra2.github.io/assignments/4/fans/530/"
                             >this page for Shirley A. Gorman</a>, the most
                         profilic letter-writer in the dataset.</p>
                 </xf:group>
