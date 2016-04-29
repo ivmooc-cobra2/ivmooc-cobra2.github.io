@@ -6,11 +6,11 @@
   </meta>
   <graph defaultedgetype="undirected" mode="static">
     <attributes class="node" mode="static">
-      <attribute id="weighted degree" title="Weighted Degree" type="double">
-        <default>0.0</default>
-      </attribute>
       <attribute id="degree" title="Degree" type="integer">
         <default>0</default>
+      </attribute>
+      <attribute id="weighted degree" title="Weighted Degree" type="double">
+        <default>0.0</default>
       </attribute>
       <attribute id="eccentricity" title="Eccentricity" type="double">
         <default>0.0</default>
@@ -34,23 +34,23 @@
     <nodes>
       <node id="http://ivmooc-cobra2.github.io/cobra/series/1442" label="Tales of Suspense">
         <attvalues>
-          <attvalue for="weighted degree" value="47.0"></attvalue>
           <attvalue for="degree" value="6"></attvalue>
+          <attvalue for="weighted degree" value="47.0"></attvalue>
           <attvalue for="eccentricity" value="2.0"></attvalue>
           <attvalue for="closnesscentrality" value="0.875"></attvalue>
           <attvalue for="harmonicclosnesscentrality" value="0.9285714285714286"></attvalue>
           <attvalue for="betweenesscentrality" value="0.0"></attvalue>
-          <attvalue for="modularity_class" value="1"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
           <attvalue for="pageranks" value="0.11277703906854289"></attvalue>
         </attvalues>
         <viz:size value="12.235294"></viz:size>
-        <viz:position x="187.80278" y="-301.1686"></viz:position>
+        <viz:position x="-513.7533" y="6.5577626"></viz:position>
         <viz:color r="255" g="255" b="0"></viz:color>
       </node>
       <node id="http://ivmooc-cobra2.github.io/cobra/series/1482" label="Fantastic Four">
         <attvalues>
-          <attvalue for="weighted degree" value="80.0"></attvalue>
           <attvalue for="degree" value="6"></attvalue>
+          <attvalue for="weighted degree" value="80.0"></attvalue>
           <attvalue for="eccentricity" value="2.0"></attvalue>
           <attvalue for="closnesscentrality" value="0.875"></attvalue>
           <attvalue for="harmonicclosnesscentrality" value="0.9285714285714286"></attvalue>
@@ -59,28 +59,28 @@
           <attvalue for="pageranks" value="0.11277703906854289"></attvalue>
         </attvalues>
         <viz:size value="18.058823"></viz:size>
-        <viz:position x="-4.944663" y="364.89554"></viz:position>
+        <viz:position x="0.7096412" y="-0.008998995"></viz:position>
         <viz:color r="255" g="255" b="0"></viz:color>
       </node>
       <node id="http://ivmooc-cobra2.github.io/cobra/series/1570" label="The Amazing Spider-Man">
         <attvalues>
-          <attvalue for="weighted degree" value="159.0"></attvalue>
           <attvalue for="degree" value="7"></attvalue>
+          <attvalue for="weighted degree" value="159.0"></attvalue>
           <attvalue for="eccentricity" value="1.0"></attvalue>
           <attvalue for="closnesscentrality" value="1.0"></attvalue>
           <attvalue for="harmonicclosnesscentrality" value="1.0"></attvalue>
           <attvalue for="betweenesscentrality" value="0.16666666666666666"></attvalue>
-          <attvalue for="modularity_class" value="1"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
           <attvalue for="pageranks" value="0.1290743203104857"></attvalue>
         </attvalues>
         <viz:size value="32.0"></viz:size>
-        <viz:position x="-163.03232" y="-339.2217"></viz:position>
+        <viz:position x="107.617645" y="-501.9906"></viz:position>
         <viz:color r="255" g="255" b="0"></viz:color>
       </node>
       <node id="http://ivmooc-cobra2.github.io/cobra/series/1571" label="The Avengers">
         <attvalues>
-          <attvalue for="weighted degree" value="99.0"></attvalue>
           <attvalue for="degree" value="7"></attvalue>
+          <attvalue for="weighted degree" value="99.0"></attvalue>
           <attvalue for="eccentricity" value="1.0"></attvalue>
           <attvalue for="closnesscentrality" value="1.0"></attvalue>
           <attvalue for="harmonicclosnesscentrality" value="1.0"></attvalue>
@@ -89,58 +89,58 @@
           <attvalue for="pageranks" value="0.12907432031048574"></attvalue>
         </attvalues>
         <viz:size value="21.411764"></viz:size>
-        <viz:position x="0.19066024" y="0.04613319"></viz:position>
+        <viz:position x="465.37885" y="216.95508"></viz:position>
         <viz:color r="255" g="255" b="0"></viz:color>
       </node>
       <node id="http://ivmooc-cobra2.github.io/cobra/series/1576" label="The X-Men">
         <attvalues>
-          <attvalue for="weighted degree" value="91.0"></attvalue>
           <attvalue for="degree" value="7"></attvalue>
+          <attvalue for="weighted degree" value="91.0"></attvalue>
           <attvalue for="eccentricity" value="1.0"></attvalue>
           <attvalue for="closnesscentrality" value="1.0"></attvalue>
           <attvalue for="harmonicclosnesscentrality" value="1.0"></attvalue>
           <attvalue for="betweenesscentrality" value="0.16666666666666666"></attvalue>
-          <attvalue for="modularity_class" value="1"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
           <attvalue for="pageranks" value="0.1290743203104857"></attvalue>
         </attvalues>
         <viz:size value="20.0"></viz:size>
-        <viz:position x="356.14722" y="-76.44753"></viz:position>
+        <viz:position x="459.6894" y="-228.76321"></viz:position>
         <viz:color r="255" g="255" b="0"></viz:color>
       </node>
       <node id="http://ivmooc-cobra2.github.io/cobra/series/1860" label="Captain America">
         <attvalues>
-          <attvalue for="weighted degree" value="55.0"></attvalue>
           <attvalue for="degree" value="7"></attvalue>
+          <attvalue for="weighted degree" value="55.0"></attvalue>
           <attvalue for="eccentricity" value="1.0"></attvalue>
           <attvalue for="closnesscentrality" value="1.0"></attvalue>
           <attvalue for="harmonicclosnesscentrality" value="1.0"></attvalue>
           <attvalue for="betweenesscentrality" value="0.16666666666666666"></attvalue>
-          <attvalue for="modularity_class" value="1"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
           <attvalue for="pageranks" value="0.1290743203104857"></attvalue>
         </attvalues>
         <viz:size value="13.6470585"></viz:size>
-        <viz:position x="-287.71652" y="223.2526"></viz:position>
+        <viz:position x="-314.9006" y="405.07974"></viz:position>
         <viz:color r="255" g="255" b="0"></viz:color>
       </node>
       <node id="http://ivmooc-cobra2.github.io/cobra/series/1866" label="The Incredible Hulk">
         <attvalues>
-          <attvalue for="weighted degree" value="92.0"></attvalue>
           <attvalue for="degree" value="7"></attvalue>
+          <attvalue for="weighted degree" value="92.0"></attvalue>
           <attvalue for="eccentricity" value="1.0"></attvalue>
           <attvalue for="closnesscentrality" value="1.0"></attvalue>
           <attvalue for="harmonicclosnesscentrality" value="1.0"></attvalue>
           <attvalue for="betweenesscentrality" value="0.16666666666666666"></attvalue>
-          <attvalue for="modularity_class" value="1"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
           <attvalue for="pageranks" value="0.1290743203104857"></attvalue>
         </attvalues>
         <viz:size value="20.176472"></viz:size>
-        <viz:position x="281.76324" y="230.85616"></viz:position>
+        <viz:position x="-325.13757" y="-396.91"></viz:position>
         <viz:color r="255" g="255" b="0"></viz:color>
       </node>
       <node id="http://ivmooc-cobra2.github.io/cobra/series/1939" label="Conan the Barbarian">
         <attvalues>
-          <attvalue for="weighted degree" value="23.0"></attvalue>
           <attvalue for="degree" value="7"></attvalue>
+          <attvalue for="weighted degree" value="23.0"></attvalue>
           <attvalue for="eccentricity" value="1.0"></attvalue>
           <attvalue for="closnesscentrality" value="1.0"></attvalue>
           <attvalue for="harmonicclosnesscentrality" value="1.0"></attvalue>
@@ -149,7 +149,7 @@
           <attvalue for="pageranks" value="0.12907432031048574"></attvalue>
         </attvalues>
         <viz:size value="8.0"></viz:size>
-        <viz:position x="-354.14282" y="-85.72155"></viz:position>
+        <viz:position x="120.395905" y="499.08017"></viz:position>
         <viz:color r="255" g="255" b="0"></viz:color>
       </node>
     </nodes>
