@@ -44,7 +44,7 @@
           <attvalue for="pageranks" value="0.11277703906854289"></attvalue>
         </attvalues>
         <viz:size value="12.235294"></viz:size>
-        <viz:position x="60.239925" y="511.09976"></viz:position>
+        <viz:position x="60.239925" y="529.9699"></viz:position>
         <viz:color r="255" g="255" b="0"></viz:color>
       </node>
       <node id="http://ivmooc-cobra2.github.io/cobra/series/1482" label="Fantastic Four">
