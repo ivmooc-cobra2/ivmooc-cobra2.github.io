@@ -44,7 +44,7 @@
           <attvalue for="pageranks" value="0.11277703906854289"></attvalue>
         </attvalues>
         <viz:size value="12.235294"></viz:size>
-        <viz:position x="191.24759" y="-68.975395"></viz:position>
+        <viz:position x="187.80278" y="-301.1686"></viz:position>
         <viz:color r="255" g="255" b="0"></viz:color>
       </node>
       <node id="http://ivmooc-cobra2.github.io/cobra/series/1482" label="Fantastic Four">
@@ -59,7 +59,7 @@
           <attvalue for="pageranks" value="0.11277703906854289"></attvalue>
         </attvalues>
         <viz:size value="18.058823"></viz:size>
-        <viz:position x="0.795344" y="1.4913547"></viz:position>
+        <viz:position x="-4.944663" y="364.89554"></viz:position>
         <viz:color r="255" g="255" b="0"></viz:color>
       </node>
       <node id="http://ivmooc-cobra2.github.io/cobra/series/1570" label="The Amazing Spider-Man">
@@ -74,7 +74,7 @@
           <attvalue for="pageranks" value="0.1290743203104857"></attvalue>
         </attvalues>
         <viz:size value="32.0"></viz:size>
-        <viz:position x="24.831736" y="201.4741"></viz:position>
+        <viz:position x="-163.03232" y="-339.2217"></viz:position>
         <viz:color r="255" g="255" b="0"></viz:color>
       </node>
       <node id="http://ivmooc-cobra2.github.io/cobra/series/1571" label="The Avengers">
@@ -89,7 +89,7 @@
           <attvalue for="pageranks" value="0.12907432031048574"></attvalue>
         </attvalues>
         <viz:size value="21.411764"></viz:size>
-        <viz:position x="-114.30742" y="-166.11934"></viz:position>
+        <viz:position x="0.19066024" y="0.04613319"></viz:position>
         <viz:color r="255" g="255" b="0"></viz:color>
       </node>
       <node id="http://ivmooc-cobra2.github.io/cobra/series/1576" label="The X-Men">
@@ -104,7 +104,7 @@
           <attvalue for="pageranks" value="0.1290743203104857"></attvalue>
         </attvalues>
         <viz:size value="20.0"></viz:size>
-        <viz:position x="-142.14563" y="144.99994"></viz:position>
+        <viz:position x="356.14722" y="-76.44753"></viz:position>
         <viz:color r="255" g="255" b="0"></viz:color>
       </node>
       <node id="http://ivmooc-cobra2.github.io/cobra/series/1860" label="Captain America">
@@ -119,7 +119,7 @@
           <attvalue for="pageranks" value="0.1290743203104857"></attvalue>
         </attvalues>
         <viz:size value="13.6470585"></viz:size>
-        <viz:position x="-203.4171" y="-22.43649"></viz:position>
+        <viz:position x="-287.71652" y="223.2526"></viz:position>
         <viz:color r="255" g="255" b="0"></viz:color>
       </node>
       <node id="http://ivmooc-cobra2.github.io/cobra/series/1866" label="The Incredible Hulk">
@@ -134,7 +134,7 @@
           <attvalue for="pageranks" value="0.1290743203104857"></attvalue>
         </attvalues>
         <viz:size value="20.176472"></viz:size>
-        <viz:position x="71.436516" y="-198.30362"></viz:position>
+        <viz:position x="281.76324" y="230.85616"></viz:position>
         <viz:color r="255" g="255" b="0"></viz:color>
       </node>
       <node id="http://ivmooc-cobra2.github.io/cobra/series/1939" label="Conan the Barbarian">
@@ -149,7 +149,7 @@
           <attvalue for="pageranks" value="0.12907432031048574"></attvalue>
         </attvalues>
         <viz:size value="8.0"></viz:size>
-        <viz:position x="172.77397" y="106.106346"></viz:position>
+        <viz:position x="-354.14282" y="-85.72155"></viz:position>
         <viz:color r="255" g="255" b="0"></viz:color>
       </node>
     </nodes>
